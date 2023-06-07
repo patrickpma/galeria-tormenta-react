@@ -151,7 +151,7 @@ function Galeria() {
                 {chars.map((c) => {
                     return <div class="grid-block">
                         <div class="tile">
-                            <img class="tile-img tile-img img-gray" title={c.title} src={c.image} onClick={() => shows(c)} />
+                            <img class="tile-img tile-img img-gray" title={c.title} src={c.image} alt={c.title} onClick={() => shows(c)} />
                         </div>
                     </div>
                 })}
@@ -175,7 +175,7 @@ function Galeria() {
                     <div class="grid image-grid">
                         <div class="grid-modal">
                             <div class="tile">
-                                <img class="tile-img tile-img" title={char.title} src={char.image} onClick={() => shows(char)} />
+                                <img class="tile-img tile-img" title={char.title} src={char.image} alt={c.title} onClick={() => shows(char)} />
                             </div>
                         </div>
                     </div>
