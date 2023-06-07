@@ -46,6 +46,13 @@ const chars = [
         "situacao": "Vivo"
     },
     {
+        "title": "Balthazar - Anão Atirador",
+        "image": require("./img/Balthazar.jpg"),
+        "classe": "Aliado",
+        "ultimaAparicao": "Valkaria",
+        "situacao": "Vivo"
+    },
+    {
         "title": "Grogo - Baloeiro Goblin",
         "image": require("./img/grogo-baloeiro.jpg"),
         "classe": "Aliado",
@@ -127,9 +134,43 @@ const chars = [
         "image": require("./img/Kaoru.jpg"),
         "classe": "Aliado",
         "ultimaAparicao": "Cemitério Dragoes (Sonho)",
-        "situacao": "Viva"
+        "situacao": "Vivo"
+    },
+    {
+        "title": "Arsenal - Sumo-sacerdote de Keen",
+        "image": require("./img/Arsenal.jpg"),
+        "classe": "",
+        "ultimaAparicao": "Desconhecido",
+        "situacao": "Vivo"
+    },
+    {
+        "title": "Sckhar - Dragão Rei Vermelho",
+        "image": require("./img/Sckhar.jpg"),
+        "classe": "",
+        "ultimaAparicao": "Tapista",
+        "situacao": "Vivo"
+    },
+    {
+        "title": "Talude - Arquimago",
+        "image": require("./img/Talude.jpg"),
+        "classe": "Aliado",
+        "ultimaAparicao": "Valkaria",
+        "situacao": "Vivo"
+    },
+    {
+        "title": "Kallyadranoch - Deus dos Dragões e do Poder",
+        "image": require("./img/Kallyadranoch.png"),
+        "classe": "",
+        "ultimaAparicao": "",
+        "situacao": "Deus"
+    },
+    {
+        "title": "Khalmyr - Deus da Ordem e da Justiça",
+        "image": require("./img/Khalmyr.jpg"),
+        "classe": "",
+        "ultimaAparicao": "",
+        "situacao": "Deus"
     }
-
 ]
 
 
@@ -166,9 +207,9 @@ function Galeria() {
                     <Modal.Title>Modal title</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                   <h3>{char.title}</h3>
-                   <span><b>Ultima Localização:</b> {char.ultimaAparicao}</span><br/>
-                   <span><b>Situação:</b> {char.situacao}</span>
+                    <h3>{char.title}</h3>
+                    <span><b>Ultima Localização:</b> {char.ultimaAparicao}</span><br />
+                    <span><b>Situação:</b> {char.situacao}</span>
                     <div className="grid image-grid">
                         <div className="grid-modal">
                             <div className="tile">
