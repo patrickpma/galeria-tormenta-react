@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
+
 
 const chars = [
     {
@@ -178,14 +178,7 @@ const chars = [
 function Galeria() {
 
     const [show, setShow] = useState(false);
-    const [personagens, setPersonagens] = useState([]);
     const [char, setChar] = useState({});
-    const [locais, setLocais] = useState([]);
-    useEffect(() => {
-        setPersonagens(chars);
-        setLocais([...new Set(chars.map((c) => { return c.ultimaAparicao }))]);
-    }, personagens);
-
 
     const formatName = (str, index) => {
         if (str) {
@@ -204,19 +197,10 @@ function Galeria() {
         setShow(true);
     }
 
-    const handleChange = (e) => {
-        let value = e.target[e.target.type === "checkbox" ? "checked" : "value"];
-        let name = e.target.id;
-      
-        
-        alert(value);
-    }
-
     return (
         <>
-        
             <div className="grid image-grid">
-                {personagens.map((c, index) => {
+                {chars.map((c, index) => {
                     return <div className="grid-block" key={index}>
                         <div className="tile" key={index}>
                             <img key={index} className="tile-img tile-img img-gray" title={c.title} src={c.image} alt={c.title} onClick={() => handleShow(c)} />
