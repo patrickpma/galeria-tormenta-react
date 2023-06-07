@@ -116,7 +116,7 @@ const chars = [
         "situacao": "Morto"
     },
     {
-        "title": "Zarach o Louco",
+        "title": "Zarach - Mendigo Louco de NorthFallen",
         "image": require("./img/Zarach-o-louco.jpg"),
         "classe": "Aliado",
         "ultimaAparicao": "NorthFallen",
@@ -130,7 +130,7 @@ const chars = [
         "situacao": "Morto"
     },
     {
-        "title": "Kaoru - Kenomo Panda de Pandaria",
+        "title": "Kaoru - Kenomo Panda Vermelho",
         "image": require("./img/Kaoru.jpg"),
         "classe": "Aliado",
         "ultimaAparicao": "Cemitério Dragoes (Sonho)",
@@ -212,7 +212,7 @@ function Galeria() {
                     <Modal.Title>{formatName(char.title, 0)}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <span><b>Ocupação: </b>{formatName(char.title, 1)}</span><br />
+                    <span><b>Descrição: </b>{formatName(char.title, 1)}</span><br />
                     <span><b>Ultima Localização:</b> {char.ultimaAparicao}</span><br />
                     <span><b>Situação:</b> {char.situacao}</span>
                     <div className="grid image-grid">
