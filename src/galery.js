@@ -171,6 +171,28 @@ const chars = [
         "classe": "",
         "ultimaAparicao": "Ordine",
         "situacao": "Deus"
+    },
+    {
+        "title": "Honnur |Xamã e mestre de Elbony",
+        "image": require("./img/HONNUR.jpeg"),
+        "classe": "Aliado",
+        "ultimaAparicao": "Cemitério Dragoes (Sonho)",
+        "situacao": "Vivo"
+    }
+    ,
+    {
+        "title": "Camaleão |Famoso fora da lei",
+        "image": require("./img/Camaleao.jpg"),
+        "classe": "Inimigo",
+        "ultimaAparicao": "Desconhecido",
+        "situacao": "Vivo"
+    },
+    {
+        "title": "Larianny |Barda Meio-Genio",
+        "image": require("./img/Larianny.jpg"),
+        "classe": "",
+        "ultimaAparicao": "Yuvallin",
+        "situacao": "Vivo"
     }
 ]
 
