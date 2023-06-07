@@ -144,21 +144,18 @@ function Galeria() {
         setChar(_char);
         setShow(true);
     }
-    const handleShow = () => setShow(true);
+
     return (
         <>
-            <div class="grid image-grid">
-                {chars.map((c) => {
-                    return <div class="grid-block">
-                        <div class="tile">
-                            <img class="tile-img tile-img img-gray" title={c.title} src={c.image} alt={c.title} onClick={() => shows(c)} />
+            <div className="grid image-grid">
+                {chars.map((c, index) => {
+                    return <div className="grid-block" key={index}>
+                        <div className="tile" key={index}>
+                            <img key={index} className="tile-img tile-img img-gray" title={c.title} src={c.image} alt={c.title} onClick={() => shows(c)} />
                         </div>
                     </div>
                 })}
             </div>
-            <Button variant="primary" onClick={handleShow}>
-                Launch static backdrop modal
-            </Button>
             <Modal
                 show={show}
                 onHide={handleClose}
@@ -172,10 +169,10 @@ function Galeria() {
                    <h3>{char.title}</h3>
                    <span><b>Ultima Localização:</b> {char.ultimaAparicao}</span><br/>
                    <span><b>Situação:</b> {char.situacao}</span>
-                    <div class="grid image-grid">
-                        <div class="grid-modal">
-                            <div class="tile">
-                                <img class="tile-img tile-img" title={char.title} src={char.image} alt={char.title} onClick={() => shows(char)} />
+                    <div className="grid image-grid">
+                        <div className="grid-modal">
+                            <div className="tile">
+                                <img className="tile-img tile-img" title={char.title} src={char.image} alt={char.title} onClick={() => shows(char)} />
                             </div>
                         </div>
                     </div>

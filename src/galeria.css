@@ -31,7 +31,8 @@ html {
   }
   
   .grid-block {
-    width: 30%;
+    width: 100%;
+    max-width: 500px;
     min-height: 11.25rem;
     padding: 1rem;
   }
