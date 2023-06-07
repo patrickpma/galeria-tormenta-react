@@ -175,7 +175,7 @@ function Galeria() {
                     <div class="grid image-grid">
                         <div class="grid-modal">
                             <div class="tile">
-                                <img class="tile-img tile-img" title={char.title} src={char.image} alt={c.title} onClick={() => shows(char)} />
+                                <img class="tile-img tile-img" title={char.title} src={char.image} alt={char.title} onClick={() => shows(char)} />
                             </div>
                         </div>
                     </div>
