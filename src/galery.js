@@ -161,14 +161,14 @@ const chars = [
         "title": "Kallyadranoch - Deus dos Dragões e do Poder",
         "image": require("./img/Kallyadranoch.png"),
         "classe": "",
-        "ultimaAparicao": "",
+        "ultimaAparicao": "Drashantyr",
         "situacao": "Deus"
     },
     {
         "title": "Khalmyr - Deus da Ordem e da Justiça",
         "image": require("./img/Khalmyr.jpg"),
         "classe": "",
-        "ultimaAparicao": "",
+        "ultimaAparicao": "Ordine",
         "situacao": "Deus"
     }
 ]
