@@ -137,7 +137,7 @@ const chars = [
         "situacao": "Vivo"
     },
     {
-        "title": "Arsenal - Sumo-sacerdote de Keen",
+        "title": "Arsenal - Sumo sacerdote de Keen",
         "image": require("./img/Arsenal.jpg"),
         "classe": "",
         "ultimaAparicao": "Desconhecido",
@@ -179,9 +179,19 @@ function Galeria() {
     const [show, setShow] = useState(false);
     const [char, setChar] = useState({});
 
-    const handleClose = () => setShow(false);
+    const formatName = (str, index) => {
+        if (str) {
+            const words = str.split('-')
+            return words[index].trim();
+        }
+    }
 
-    const shows = (_char) => {
+    const handleClose = () => {
+        setChar({});
+        setShow(false);
+    };
+
+    const handleShow = (_char) => {
         setChar(_char);
         setShow(true);
     }
@@ -192,28 +202,23 @@ function Galeria() {
                 {chars.map((c, index) => {
                     return <div className="grid-block" key={index}>
                         <div className="tile" key={index}>
-                            <img key={index} className="tile-img tile-img img-gray" title={c.title} src={c.image} alt={c.title} onClick={() => shows(c)} />
+                            <img key={index} className="tile-img tile-img img-gray" title={c.title} src={c.image} alt={c.title} onClick={() => handleShow(c)} />
                         </div>
                     </div>
                 })}
             </div>
-            <Modal
-                show={show}
-                onHide={handleClose}
-                backdrop="static"
-                keyboard={false}
-            >
+            <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal title</Modal.Title>
+                    <Modal.Title>{formatName(char.title, 0)}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <h3>{char.title}</h3>
+                    <span><b>Ocupação: </b>{formatName(char.title, 1)}</span><br />
                     <span><b>Ultima Localização:</b> {char.ultimaAparicao}</span><br />
                     <span><b>Situação:</b> {char.situacao}</span>
                     <div className="grid image-grid">
                         <div className="grid-modal">
                             <div className="tile">
-                                <img className="tile-img tile-img" title={char.title} src={char.image} alt={char.title} onClick={() => shows(char)} />
+                                <img className="tile-img tile-img" title={char.title} src={char.image} alt={char.title} />
                             </div>
                         </div>
                     </div>
