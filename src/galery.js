@@ -96,7 +96,7 @@ const chars = [
         "situacao": "Morto"
     },
     {
-        "title": "Minoru |Monge Clarigo de Lin-wu",
+        "title": "Minoru |Monge Clerigo de Lin-wu",
         "image": require("./img/minoru.jpg"),
         "classe": "Aliado",
         "ultimaAparicao": "Cemitério Dragoes (Sonho)",
@@ -201,7 +201,7 @@ function Galeria() {
 
     const [show, setShow] = useState(false);
     const [char, setChar] = useState({});
-
+    console.log(chars);
     const formatName = (str, index) => {
         if (str) {
             const words = str.split('|')
@@ -222,7 +222,16 @@ function Galeria() {
     return (
         <>
             <div className="grid image-grid">
-                {chars.map((c, index) => {
+                {chars.sort((a, b) => {
+                    if (a.title > b.title) {
+                        return 1;
+                    }
+                    if (a.title < b.title) {
+                        return -1;
+                    }
+                    // a must be equal to b
+                    return 0;
+                }).map((c, index) => {
                     return <div className="grid-block" key={index}>
                         <div className="tile" key={index}>
                             <img key={index} className="tile-img tile-img img-gray" title={c.title} src={c.image} alt={c.title} onClick={() => handleShow(c)} />
