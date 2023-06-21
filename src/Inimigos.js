@@ -6,7 +6,6 @@ export const Inimigos = {
 
 function get() {
     let chars = [
-        ,
         {
             "title": "Thomas Heldetch |Lider do Culto de Aharadak em Yuvallin",
             "image": require("./img/Thomas-Heldretch.jpg"),
