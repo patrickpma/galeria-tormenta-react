@@ -21,13 +21,13 @@ function get() {
         {
             "title": "Balthazar |Anão Atirador",
             "image": require("./img/Balthazar.jpg"),
-            "ultimaAparicao": "Valkaria",
+            "ultimaAparicao": "Fortaleza de Arsenal",
             "situacao": "Morto"
         },
         {
             "title": "Grogo |Baloeiro Goblin",
             "image": require("./img/grogo-baloeiro.jpg"),
-            "ultimaAparicao": "Valkaria",
+            "ultimaAparicao": "Nitamu-ra (Valkaria)",
             "situacao": "Vivo"
         },
         {
@@ -57,7 +57,7 @@ function get() {
         {
             "title": "Shizuia | Guerreira serva de Lin-Wu",
             "image": require("./img/Shizuia.jpg"),
-            "ultimaAparicao": "Valkaria",
+            "ultimaAparicao": "Nitamu-ra (Valkaria)",
             "situacao": "Vivo"
         },
         {
@@ -75,7 +75,7 @@ function get() {
         {
             "title": "Talude |Arquimago",
             "image": require("./img/Talude.jpg"),
-            "ultimaAparicao": "Valkaria",
+            "ultimaAparicao": "Nitamu-ra (Valkaria)",
             "situacao": "Vivo"
         },
         {
