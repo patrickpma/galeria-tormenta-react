@@ -16,7 +16,7 @@ function get() {
             "title": "Irmão mais velho | Lider da Compania dos Irmãos",
             "image": require("./img/irmao.jpg"),
             "ultimaAparicao": "Submundo de Valkaria",
-            "situacao": "Morto"
+            "situacao": "Vivo"
         },
         {
             "title": "Balthazar |Anão Atirador",
