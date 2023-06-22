@@ -33,8 +33,8 @@ function Principia() {
             <div className="card-body">
                 <div className="tab-content" id="custom-tabs-one-tabContent">
                 <div className="tab-pane fade active show" id="custom-tabs-one-dash" role="tabpanel" aria-labelledby="custom-tabs-one-dash-tab">
-                        {/* <RPGDashboard title={"Heróis"} exibeMana={true} data={Players.get()} />
-                        <RPGDashboard title={"Ameaças"}  exibeMana={true} data={Ameacas.get()} /> */}
+                        <RPGDashboard title={"Heróis"} exibeMana={true} data={Players.get()} />
+                        <RPGDashboard title={"Ameaças"}  exibeMana={true} data={Ameacas.get()} />
                     </div>
                     <div className="tab-pane fade" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
                         <GaleriaPC data={Apps.Jogadores.get()} />
