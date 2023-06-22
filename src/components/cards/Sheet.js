@@ -30,23 +30,31 @@ function Sheet(props) {
 
         _ataque = _ataque + parseInt(props.data.Habilidade) + parseInt(data.ataque);
         props.onAtack(props.data.index, _custo);
-        alert("Ataque: " + _ataque+ " - Pontos de Magia Gastos: " + _custo);
+        alert("Ataque: " + _ataque + " - Pontos de Magia Gastos: " + _custo);
     }
 
     const calcDefesa = () => {
         if (!data.defesa)
             return;
-        let _defesa = parseInt(props.data.Armadura)
+        let _defesa = props.data.Armadura
+
+        //adiciona modificadores de vunerabilidade e armadura extra
+        _defesa = (data.adicionalDefesa && data.adicionalDefesa === "Vunerabilidade") ? 0 : _defesa;
+        _defesa = (data.adicionalDefesa && data.adicionalDefesa === "Armadura Extra") ? _defesa * 2 : _defesa;
+
+        //verifica se foi rolado um critico
         if (data.defesa > 5)
             _defesa = _defesa * 2;
         _defesa = _defesa + parseInt(props.data.Habilidade) + parseInt(data.defesa);
-        let _dano = data.ataqueRecebido - _defesa;
+        let _dano = ((data.adicionalDefesa && data.adicionalDefesa === "Invulnerabilidade") ? Math.floor(data.ataqueRecebido / 10) : data.ataqueRecebido) - _defesa;
 
         if (!data.escala) {
             data.escala = 1
         }
+
+        //ajusta mutiplicador de escala
         let mult = 1;
-        debugger;
+        
         if (data.escala > props.data.escala) {
             mult = data.escala / props.data.escala;
             if (_dano > 0) {

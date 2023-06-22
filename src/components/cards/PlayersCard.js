@@ -57,7 +57,7 @@ function PlayersCard(props) {
         let pvsAtuais = playersCopy[index]?.atualPV;
         let c = playersCopy[index];
 
-        if (pvsAtuais + 1 <= playersCopy[index]?.totalPM) {
+        if (pvsAtuais + 1 <= playersCopy[index]?.totalPV) {
             pvsAtuais += 1;
             playersCopy[index].atualPV = pvsAtuais;
         }
