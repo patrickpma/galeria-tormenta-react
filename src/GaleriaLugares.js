@@ -47,7 +47,7 @@ function GaleriaLugares(props) {
                 })}
             </div>
             <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
-                <Modal.Header closeButton>
+                <Modal.Header>
                     <Modal.Title>{formatName(char.title, 0)}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>

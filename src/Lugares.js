@@ -20,6 +20,10 @@ function get() {
         {
             "title": "Nitamu-ra | Bairro Tamuriano em Valkaria",
             "image": require("./img/Lugares/nitamura.jpg"),
+        },
+        {
+            "title": "Northfallen | Pequena vila no sul de Zackarov",
+            "image": require("./img/Lugares/085f4446-274b-4bea-b2eb-e384974a7792.jpg"),
         }
     ]
 

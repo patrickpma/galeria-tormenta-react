@@ -5,12 +5,18 @@ import Principia from './Principia';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
+export { Deuses } from './Deuses';
+export { Outros } from './Outros';
+export { Inimigos } from './Inimigos';
+export { Jogadores } from './Jogadores';
+export { Lugares } from './Lugares';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <BrowserRouter>
-    <Principia />
-  </BrowserRouter>
+    <BrowserRouter>
+      <Principia />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
