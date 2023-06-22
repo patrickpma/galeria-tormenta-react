@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function PlayersCard(props) {
+
     const [char, setChar] = useState({
         "index": -1,
         "nome": "",
@@ -9,7 +10,12 @@ function PlayersCard(props) {
         "totalPM": "",
         "atualPM": ""
     });
-    const [players, setPlayers] = useState(props.data);
+    const [players, setPlayers] = useState([]);
+
+    const fechData = () => {
+        setPlayers(props.data);
+    }
+    useEffect(fechData, [])
 
     const handleChange = (e) => {
         let value = e.target["value"];
@@ -57,7 +63,7 @@ function PlayersCard(props) {
         let pvsAtuais = playersCopy[index]?.atualPV;
         let c = playersCopy[index];
 
-        if (pvsAtuais + 1 <= playersCopy[index]?.totalPM) {
+        if (pvsAtuais + 1 <= playersCopy[index]?.totalPV) {
             pvsAtuais += 1;
             playersCopy[index].atualPV = pvsAtuais;
         }
@@ -103,7 +109,7 @@ function PlayersCard(props) {
     }
 
     return (
-        <div className="card">
+        <div className="card card-primary">
             <div className="card-header">
                 <h3 className="card-title">Lista de {props.title}</h3>
             </div>
@@ -114,7 +120,7 @@ function PlayersCard(props) {
                             <label>Personagem</label>
                             <select className="custom-select rounded-0" id="exampleSelectRounded0" onChange={handleChange}>
                                 <option value="">Selecione</option>
-                                {players.map((c,key) => {
+                                {players.filter(p => p.index > 0).map((c, key) => {
                                     return <option key={key} value={c?.nome}>{c?.nome}</option>
                                 })}
                             </select>

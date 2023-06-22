@@ -2,12 +2,12 @@
 function LifeCard(props) {
 
     return (
-        <div className="card">
+        <div className="card card-primary">
             <div className="card-header">
                 <h3 className="card-title">Pontos de Vida e Magia</h3>
             </div>
             <div className="card-body">
-                {props.data.map((c,key) => {
+                {props.data.filter(p => p.index > 0).map((c,key) => {
                     return <>
                         <p><code>{c?.nome}</code></p>
                         <div className={"progress"} key={key}>

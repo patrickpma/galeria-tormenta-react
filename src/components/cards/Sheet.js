@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import {  toast } from 'react-toastify';
 function Sheet(props) {
 
     const [data, setData] = useState({})
@@ -11,8 +11,16 @@ function Sheet(props) {
     }
 
     const calcAtaque = () => {
-        if (!data.ataque)
+        debugger;
+        if (!props.data.index) {
+            toast.error("Nenhum Personagem Selecionado.");
             return;
+        }
+        if (!data.ataque) {
+            toast.error("Valor do Dado Não Informado.");
+            return;
+        }
+
         let _custo = 0;
 
         if (data.atkEspecial)
@@ -22,7 +30,7 @@ function Sheet(props) {
         if (data.adicionalAtaque && data.adicionalAtaque.includes("Poderoso"))
             _custo++;
 
-        let _ataque = props.data.AtributoAtaque + (data.atkEspecial ? parseInt(data.atkEspecial) : 0);
+        let _ataque = props.data.AtributoAtaque + (data.atkEspecial ? parseInt(data.atkEspecial) : 0) + (data.ataqueBonusMagico ? parseInt(data.ataqueBonusMagico) : 0);
         if (data.adicionalAtaque && data.adicionalAtaque.includes("Perigoso") && data.ataque > 4)
             _ataque = _ataque * (data.adicionalAtaque.includes("Poderoso") ? 3 : 2);
         else if (data.ataque > 5)
@@ -30,23 +38,37 @@ function Sheet(props) {
 
         _ataque = _ataque + parseInt(props.data.Habilidade) + parseInt(data.ataque);
         props.onAtack(props.data.index, _custo);
-        alert("Ataque: " + _ataque+ " - Pontos de Magia Gastos: " + _custo);
+        toast.success("Ataque: " + _ataque + " - Pontos de Magia Gastos: " + _custo);
     }
 
     const calcDefesa = () => {
-        if (!data.defesa)
+        if (!props.data.index) {
+            toast.error("Nenhum Personagem Selecionado.");
             return;
-        let _defesa = parseInt(props.data.Armadura)
+        }
+        if (!data.defesa) {
+            toast.error("Valor do Dado Não Informado.");
+            return;
+        }
+        let _defesa = props.data.Armadura +  (data.defesaBonusMagico ? parseInt(data.defesaBonusMagico) : 0);
+
+        //adiciona modificadores de vunerabilidade e armadura extra
+        _defesa = (data.adicionalDefesa && data.adicionalDefesa === "Vunerabilidade") ? 0 : _defesa;
+        _defesa = (data.adicionalDefesa && data.adicionalDefesa === "Armadura Extra") ? _defesa * 2 : _defesa;
+
+        //verifica se foi rolado um critico
         if (data.defesa > 5)
             _defesa = _defesa * 2;
         _defesa = _defesa + parseInt(props.data.Habilidade) + parseInt(data.defesa);
-        let _dano = data.ataqueRecebido - _defesa;
+        let _dano = ((data.adicionalDefesa && data.adicionalDefesa === "Invulnerabilidade") ? Math.floor(data.ataqueRecebido / 10) : data.ataqueRecebido) - _defesa;
 
         if (!data.escala) {
             data.escala = 1
         }
+
+        //ajusta mutiplicador de escala
         let mult = 1;
-        debugger;
+
         if (data.escala > props.data.escala) {
             mult = data.escala / props.data.escala;
             if (_dano > 0) {
@@ -63,11 +85,11 @@ function Sheet(props) {
         if (_dano > 0)
             props.onDamage(props.data.index, _dano);
 
-        alert("Defesa: " + _defesa + " - Dano: " + _dano);
+        toast.success("Defesa: " + _defesa + " - Dano: " + _dano);
     }
 
     return (
-        <div className="card">
+        <div className="card card-primary">
             <div className="card-header">
                 <h3 className="card-title">{props.data.nome} (F{props.data.Forca} , H{props.data.Habilidade}, R{props.data.Resistencia}, A{props.data.Armadura}, PdF{props.data.PdF})</h3>
             </div>
@@ -76,11 +98,11 @@ function Sheet(props) {
                     <div className="col-md-12"><h6>Ataque</h6></div>
                 </div>
                 <div className="row" >
-                    <div className="col-md-6">
+                    <div className="col-md-4">
                         <div className="form-group">
-                            <label>Bônus</label>
+                            <label>Ataque Especial</label>
                             <select className="custom-select rounded-0" id="atkEspecial" onChange={handleChange}>
-                                <option value={0}>Selecione</option>
+                                <option value={0}>Sem Ataque Especial</option>
                                 <option value={2}>Ataque Especial x1</option>
                                 <option value={4}>Ataque Especial x2</option>
                                 <option value={6}>Ataque Especial x3</option>
@@ -107,6 +129,14 @@ function Sheet(props) {
                     </div>
                     <div className="col-md-2">
                         <div className="form-group">
+                            <label>Bônus</label>
+                            <div className="input-group">
+                                <input type="text" id="ataqueBonusMagico" className="form-control" placeholder='' onChange={handleChange} />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-2">
+                        <div className="form-group">
                             <label>Dado</label>
                             <div className="input-group">
                                 <input type="text" id="ataque" className="form-control" placeholder='' onChange={handleChange} />
@@ -121,7 +151,7 @@ function Sheet(props) {
                     <div className="col-md-12"><h6>Defesa</h6></div>
                 </div>
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <div className="form-group">
                             <label>Condiçoes Especiais</label>
                             <select className="custom-select rounded-0" id="adicionalDefesa" onChange={handleChange}>
@@ -132,7 +162,7 @@ function Sheet(props) {
                             </select>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <div className="form-group">
                             <label>Escala do Ataque</label>
                             <select className="custom-select rounded-0" id="escala" onChange={handleChange}>
@@ -147,6 +177,14 @@ function Sheet(props) {
                         <div className="form-group">
                             <label>Ataque Recebido</label>
                             <input type="text" id="ataqueRecebido" className="form-control" placeholder='' onChange={handleChange} />
+                        </div>
+                    </div>
+                    <div className="col-md-2">
+                        <div className="form-group">
+                            <label>Bônus Defesa</label>
+                            <div className="input-group">
+                                <input type="text" id="defesaBonusMagico" className="form-control" placeholder='' onChange={handleChange} />
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-2">
