@@ -20,7 +20,8 @@ function RPGDashboard(props) {
     const handleAtack = (index, custo) => {
         if (index === -1)
             return;
-        let playersCopy = [...players];
+        debugger;
+            let playersCopy = [...players];
         let pmsAtuais = playersCopy[index].atualPM;
 
         if (pmsAtuais - custo > -1) {
@@ -47,7 +48,7 @@ function RPGDashboard(props) {
         setPlayers(playersCopy);
     }
     return (
-        <div className="card">
+        <div className="card card-secondary card-outline">
             <div className="card-header">
                 <h2 className="card-title"><b>{props.title}</b></h2>
             </div>
