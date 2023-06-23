@@ -11,7 +11,6 @@ function Sheet(props) {
     }
 
     const handleChangeNumeric = (e) => {
-debugger;
         let value = e.target[e.target.type === "checkbox" ? "checked" : "value"];
         let name = e.target.id;
         value = value.replace(/\D/g, "");
@@ -148,7 +147,7 @@ debugger;
                         <div className="form-group">
                             <label>Buff</label>
                             <div className="input-group">
-                                <input type="text" id="ataqueBonusMagico" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.ataqueBonusMagico}/>
+                                <input type="text" id="ataqueBonusMagico" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.ataqueBonusMagico} />
                             </div>
                         </div>
                     </div>
@@ -156,7 +155,7 @@ debugger;
                         <div className="form-group">
                             <label>Outros</label>
                             <div className="input-group">
-                                <input type="text" id="outrosValoresAtaque" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.outrosValoresAtaque}/>
+                                <input type="text" id="outrosValoresAtaque" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.outrosValoresAtaque} />
                             </div>
                         </div>
                     </div>
@@ -164,7 +163,7 @@ debugger;
                         <div className="form-group">
                             <label>Dado</label>
                             <div className="input-group">
-                                <input type="text" id="ataque" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.ataque}/>
+                                <input type="text" id="ataque" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.ataque} />
                                 <div className="input-group-append">
                                     <div className="input-group-text" onClick={calcAtaque}><i className="fas fa-solid fa-dice" aria-hidden="true"></i></div>
                                 </div>
@@ -201,14 +200,14 @@ debugger;
                     <div className="col-md-2">
                         <div className="form-group">
                             <label>Ataque Recebido</label>
-                            <input type="text" id="ataqueRecebido" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.ataqueRecebido}/>
+                            <input type="text" id="ataqueRecebido" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.ataqueRecebido} />
                         </div>
                     </div>
                     <div className="col-md-2">
                         <div className="form-group">
                             <label>Buff</label>
                             <div className="input-group">
-                                <input type="text" id="defesaBonusMagico" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.defesaBonusMagico}/>
+                                <input type="text" id="defesaBonusMagico" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.defesaBonusMagico} />
                             </div>
                         </div>
                     </div>
@@ -216,7 +215,7 @@ debugger;
                         <div className="form-group">
                             <label>Dado</label>
                             <div className="input-group">
-                                <input type="text" id="defesa" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.defesa}/>
+                                <input type="text" id="defesa" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.defesa} />
                                 <div className="input-group-append">
                                     <div className="input-group-text" onClick={calcDefesa}><i className="fas fa-solid fa-dice" aria-hidden="true"></i></div>
                                 </div>
@@ -224,11 +223,9 @@ debugger;
                         </div>
                     </div>
                     <div className="col-md-10"></div>
-                    <div className="col-md-2">
-                        <div className="form-group">
-                            <input type="checkbox" class="form-check-input" id="danoEmDobro" onChange={handleChange} value={data.danoEmDobro}/>
-                            <label class="form-check-label">Dano em dobro.</label>
-                        </div>
+                    <div className="col-md-2" style={{ paddingLeft: '20px', }}>
+                        <input type="checkbox" className="form-check-input" id="danoEmDobro" onChange={handleChange} value={data.danoEmDobro} />
+                        <label className="form-check-label">Dano em dobro.</label>
                     </div>
                 </div>
             </div>

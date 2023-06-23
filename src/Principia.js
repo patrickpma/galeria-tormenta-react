@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import * as Apps from '../src';
 import GaleriaPC from './GaleriaPC';
 import GaleriaLugares from './GaleriaLugares';
@@ -9,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Principia() {
     return (
-        <>
+        <React.Fragment>
             <div className="card card-primary card-tabs">
                 <div className="card-header p-0 pt-1">
                     <ul className="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
@@ -71,7 +72,7 @@ function Principia() {
             />
             {/* Same as */}
             <ToastContainer />
-        </>
+            </React.Fragment>
     );
 }
 

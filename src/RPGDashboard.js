@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import PlayersCard from './components/cards/PlayersCard';
 import LifeCard from './components/cards/LifeCard';
 import Sheet from './components/cards/Sheet';
@@ -20,7 +19,7 @@ function RPGDashboard(props) {
     const handleAtack = (index, custo) => {
         if (index === -1)
             return;
-        debugger;
+        
         let playersCopy = [...players];
         let pmsAtuais = playersCopy[index].atualPM;
 

@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
 
 function GaleriaLugares(props) {
 
@@ -27,7 +26,7 @@ function GaleriaLugares(props) {
 
 
     return (
-        <>
+        <React.Fragment>
             <div className="grid image-grid">
                 {props.data.sort((a, b) => {
                     if (a.title > b.title) {
@@ -66,7 +65,7 @@ function GaleriaLugares(props) {
                     </Button>
                 </Modal.Footer>
             </Modal>
-        </>
+        </React.Fragment>
     );
 }
 
