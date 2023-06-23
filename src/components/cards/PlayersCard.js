@@ -112,6 +112,11 @@ function PlayersCard(props) {
         <div className="card card-primary">
             <div className="card-header">
                 <h3 className="card-title">Lista de {props.title}</h3>
+                <div className="card-tools">
+                    <button type="button" className="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <i className="fas fa-minus"></i>
+                    </button>
+                </div>
             </div>
             <div className="card-body">
                 <div className="row">

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 function Sheet(props) {
 
     const [data, setData] = useState({})
@@ -10,8 +10,17 @@ function Sheet(props) {
         setData({ ...data, [name]: value });
     }
 
+    const handleChangeNumeric = (e) => {
+debugger;
+        let value = e.target[e.target.type === "checkbox" ? "checked" : "value"];
+        let name = e.target.id;
+        value = value.replace(/\D/g, "");
+
+        setData({ ...data, [name]: value });
+
+    }
     const calcAtaque = () => {
-        debugger;
+
         if (!props.data.index) {
             toast.error("Nenhum Personagem Selecionado.");
             return;
@@ -36,7 +45,7 @@ function Sheet(props) {
         else if (data.ataque > 5)
             _ataque = _ataque * 2
 
-        _ataque = _ataque + parseInt(props.data.Habilidade) + parseInt(data.ataque);
+        _ataque = _ataque + parseInt(props.data.Habilidade) + parseInt(data.ataque) + ((data.outrosValoresAtaque) ? parseInt(data.outrosValoresAtaque) : 0);
         props.onAtack(props.data.index, _custo);
         toast.success("Ataque: " + _ataque + " - Pontos de Magia Gastos: " + _custo);
     }
@@ -50,7 +59,7 @@ function Sheet(props) {
             toast.error("Valor do Dado Não Informado.");
             return;
         }
-        let _defesa = props.data.Armadura +  (data.defesaBonusMagico ? parseInt(data.defesaBonusMagico) : 0);
+        let _defesa = props.data.Armadura + (data.defesaBonusMagico ? parseInt(data.defesaBonusMagico) : 0);
 
         //adiciona modificadores de vunerabilidade e armadura extra
         _defesa = (data.adicionalDefesa && data.adicionalDefesa === "Vunerabilidade") ? 0 : _defesa;
@@ -82,8 +91,11 @@ function Sheet(props) {
             }
         }
 
-        if (_dano > 0)
+        if (_dano > 0) {
+            _dano = (data.danoEmDobro) ? _dano * 2 : _dano;
             props.onDamage(props.data.index, _dano);
+        }
+
 
         toast.success("Defesa: " + _defesa + " - Dano: " + _dano);
     }
@@ -92,16 +104,21 @@ function Sheet(props) {
         <div className="card card-primary">
             <div className="card-header">
                 <h3 className="card-title">{props.data.nome} (F{props.data.Forca} , H{props.data.Habilidade}, R{props.data.Resistencia}, A{props.data.Armadura}, PdF{props.data.PdF})</h3>
+                <div className="card-tools">
+                    <button type="button" className="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <i className="fas fa-minus"></i>
+                    </button>
+                </div>
             </div>
             <div className="card-body">
                 <div className="row">
                     <div className="col-md-12"><h6>Ataque</h6></div>
                 </div>
                 <div className="row" >
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <div className="form-group">
                             <label>Ataque Especial</label>
-                            <select className="custom-select rounded-0" id="atkEspecial" onChange={handleChange}>
+                            <select className="custom-select rounded-0" id="atkEspecial" onChange={handleChange} value={data.atkEspecial}>
                                 <option value={0}>Sem Ataque Especial</option>
                                 <option value={2}>Ataque Especial x1</option>
                                 <option value={4}>Ataque Especial x2</option>
@@ -116,10 +133,10 @@ function Sheet(props) {
                             </select>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <div className="form-group">
                             <label>Adicional</label>
-                            <select className="custom-select rounded-0" id="adicionalAtaque" onChange={handleChange}>
+                            <select className="custom-select rounded-0" id="adicionalAtaque" onChange={handleChange} value={data.adicionalAtaque}>
                                 <option value={0}>Selecione</option>
                                 <option value="Perigoso">Perigoso</option>
                                 <option value="Poderoso">Poderoso</option>
@@ -129,9 +146,17 @@ function Sheet(props) {
                     </div>
                     <div className="col-md-2">
                         <div className="form-group">
-                            <label>Bônus</label>
+                            <label>Buff</label>
                             <div className="input-group">
-                                <input type="text" id="ataqueBonusMagico" className="form-control" placeholder='' onChange={handleChange} />
+                                <input type="text" id="ataqueBonusMagico" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.ataqueBonusMagico}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-2">
+                        <div className="form-group">
+                            <label>Outros</label>
+                            <div className="input-group">
+                                <input type="text" id="outrosValoresAtaque" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.outrosValoresAtaque}/>
                             </div>
                         </div>
                     </div>
@@ -139,7 +164,7 @@ function Sheet(props) {
                         <div className="form-group">
                             <label>Dado</label>
                             <div className="input-group">
-                                <input type="text" id="ataque" className="form-control" placeholder='' onChange={handleChange} />
+                                <input type="text" id="ataque" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.ataque}/>
                                 <div className="input-group-append">
                                     <div className="input-group-text" onClick={calcAtaque}><i className="fas fa-solid fa-dice" aria-hidden="true"></i></div>
                                 </div>
@@ -154,7 +179,7 @@ function Sheet(props) {
                     <div className="col-md-3">
                         <div className="form-group">
                             <label>Condiçoes Especiais</label>
-                            <select className="custom-select rounded-0" id="adicionalDefesa" onChange={handleChange}>
+                            <select className="custom-select rounded-0" id="adicionalDefesa" onChange={handleChange} value={data.adicionalDefesa}>
                                 <option value={0}>Selecione</option>
                                 <option value="Vunerabilidade">Vunerabilidade</option>
                                 <option value="Armadura Extra">Armadura Extra</option>
@@ -165,7 +190,7 @@ function Sheet(props) {
                     <div className="col-md-3">
                         <div className="form-group">
                             <label>Escala do Ataque</label>
-                            <select className="custom-select rounded-0" id="escala" onChange={handleChange}>
+                            <select className="custom-select rounded-0" id="escala" onChange={handleChange} value={data.escala}>
                                 <option value={0}>Selecione</option>
                                 <option value="1">Nigen</option>
                                 <option value="10">Sugoi</option>
@@ -176,14 +201,14 @@ function Sheet(props) {
                     <div className="col-md-2">
                         <div className="form-group">
                             <label>Ataque Recebido</label>
-                            <input type="text" id="ataqueRecebido" className="form-control" placeholder='' onChange={handleChange} />
+                            <input type="text" id="ataqueRecebido" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.ataqueRecebido}/>
                         </div>
                     </div>
                     <div className="col-md-2">
                         <div className="form-group">
-                            <label>Bônus Defesa</label>
+                            <label>Buff</label>
                             <div className="input-group">
-                                <input type="text" id="defesaBonusMagico" className="form-control" placeholder='' onChange={handleChange} />
+                                <input type="text" id="defesaBonusMagico" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.defesaBonusMagico}/>
                             </div>
                         </div>
                     </div>
@@ -191,11 +216,18 @@ function Sheet(props) {
                         <div className="form-group">
                             <label>Dado</label>
                             <div className="input-group">
-                                <input type="text" id="defesa" className="form-control" placeholder='' onChange={handleChange} />
+                                <input type="text" id="defesa" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.defesa}/>
                                 <div className="input-group-append">
                                     <div className="input-group-text" onClick={calcDefesa}><i className="fas fa-solid fa-dice" aria-hidden="true"></i></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="col-md-10"></div>
+                    <div className="col-md-2">
+                        <div className="form-group">
+                            <input type="checkbox" class="form-check-input" id="danoEmDobro" onChange={handleChange} value={data.danoEmDobro}/>
+                            <label class="form-check-label">Dano em dobro.</label>
                         </div>
                     </div>
                 </div>

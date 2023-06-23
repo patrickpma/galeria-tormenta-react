@@ -21,7 +21,7 @@ function RPGDashboard(props) {
         if (index === -1)
             return;
         debugger;
-            let playersCopy = [...players];
+        let playersCopy = [...players];
         let pmsAtuais = playersCopy[index].atualPM;
 
         if (pmsAtuais - custo > -1) {
@@ -51,6 +51,12 @@ function RPGDashboard(props) {
         <div className="card card-secondary card-outline">
             <div className="card-header">
                 <h2 className="card-title"><b>{props.title}</b></h2>
+                <div className="card-tools">
+                    <button type="button" className="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <i className="fas fa-minus"></i>
+                    </button>
+                    <button type="button" className="btn btn-tool" data-card-widget="maximize"><i className="fas fa-expand" /></button>
+                </div>
             </div>
             <div className="card-body">
                 <div className="row">
