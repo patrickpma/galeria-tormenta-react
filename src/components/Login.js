@@ -14,9 +14,8 @@ function Login(props) {
         setUser({ ...user, [name]: value });
     }
     return (
-        <div className="row">
-            <div className="col-5 col-sm-4"></div>
-            <div className="col-5 col-sm-4">
+        <div className="row" style={{paddingTop: '10%', paddingLeft: '20%', paddingRight: '20%'}}>
+            <div className="col-5 col-sm-12">
                 <div className="card card-primary">
                     <div className="card-header">
                         <h3 className="card-title">Acesso Restrito</h3>
@@ -36,7 +35,6 @@ function Login(props) {
                     </div>
                 </div>
             </div>
-            <div className="col-5 col-sm-4"></div>
         </div>
 
     );
