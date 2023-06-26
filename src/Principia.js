@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as Apps from '../src';
 import GaleriaPC from './GaleriaPC';
 import GaleriaLugares from './GaleriaLugares';
