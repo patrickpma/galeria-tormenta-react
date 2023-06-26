@@ -15,7 +15,7 @@ function PlayersCard(props) {
     const fechData = () => {
         setPlayers(props.data);
     }
-    useEffect(fechData, [])
+    useEffect(fechData, [props])
 
     const handleChange = (e) => {
         let value = e.target["value"];
@@ -108,6 +108,23 @@ function PlayersCard(props) {
         props.onChangeData(playersCopy);
     }
 
+    const handleRecoveryAll = (index) => {
+        if (index === -1)
+            return;
+        let playersCopy = [...players];
+        let c = playersCopy[index];
+
+        c.atualPV = c?.totalPV;
+        playersCopy[index].atualPV = playersCopy[index]?.totalPV;
+        c.atualPM = c?.totalPM;
+        playersCopy[index].atualPM = playersCopy[index]?.totalPM;
+
+        setChar(c);
+        setPlayers(playersCopy);
+        props.onChangeData(playersCopy);
+        
+    }
+
     return (
         <div className="card card-primary">
             <div className="card-header">
@@ -160,11 +177,12 @@ function PlayersCard(props) {
                                 <div className="input-group-text"><i className="fas fa-flask" onClick={() => handleRecoveryMana(char.index)}></i></div>
                             </div>
                         </div>
-                    </div></div>
-
-
-
+                    </div>
+                    </div>
                 </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary float-right" onClick={() => handleRecoveryAll(char.index)}>Recuperar Tudo</button>
             </div>
         </div>
     );

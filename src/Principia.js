@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Apps from '../src';
 import GaleriaPC from './GaleriaPC';
-import GaleriaLugares from './GaleriaLugares';
 import { Players } from './components/Players';
+import Login from './components/Login';
 import RPGDashboard from './RPGDashboard';
 import { Ameacas } from './components/Ameacas';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 function Principia() {
+    const [auth, setAuth] = useState(false);
+
+    const handleAuth = (loged) => {
+        setAuth(loged);
+    }
+
     return (
         <React.Fragment>
             <div className="card card-primary card-tabs">
@@ -26,25 +33,30 @@ function Principia() {
                     <div className="tab-content" id="custom-tabs-one-tabContent">
                         <div className="tab-pane fade active show" id="custom-tabs-one-dash" role="tabpanel" aria-labelledby="custom-tabs-one-dash-tab">
                             <div className="tab-pane fade active show" id="custom-tabs-one-dashboard" role="tabpanel" aria-labelledby="custom-tabs-one-dashboard-tab">
-                                <h4>Dashboard</h4>
-                                <div className="row">
-                                    <div className="col-5 col-sm-1">
-                                        <div className="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
-                                            <a className="nav-link active" id="vert-tabs-hero-tab" data-toggle="pill" href="#vert-tabs-hero" role="tab" aria-controls="vert-tabs-hero" aria-selected="false">Heróis</a>
-                                            <a className="nav-link" id="vert-tabs-menace-tab" data-toggle="pill" href="#vert-tabs-menace" role="tab" aria-controls="vert-tabs-menace" aria-selected="false">Ameaças</a>
-                                        </div>
-                                    </div>
-                                    <div className="col-7 col-sm-11">
-                                        <div className="tab-content" id="vert-tabs-tabContent">
-                                            <div className="tab-pane text-left fade active show" id="vert-tabs-hero" role="tabpanel" aria-labelledby="vert-tabs-hero-tab">
-                                                <RPGDashboard title={"Heróis"} exibeMana={true} data={Players.get()} />
-                                            </div>
-                                            <div className="tab-pane fade" id="vert-tabs-menace" role="tabpanel" aria-labelledby="vert-tabs-menace-tab">
-                                                <RPGDashboard title={"Ameaças"} exibeMana={false} data={Ameacas.get()} />
+                                {!auth &&
+                                    <Login authenticate={handleAuth}></Login>
+                                }
+                                {auth && <>
+                                    <h4>Dashboard</h4>
+                                    <div className="row">
+                                        <div className="col-5 col-sm-1">
+                                            <div className="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
+                                                <a className="nav-link active" id="vert-tabs-hero-tab" data-toggle="pill" href="#vert-tabs-hero" role="tab" aria-controls="vert-tabs-hero" aria-selected="false">Heróis</a>
+                                                <a className="nav-link" id="vert-tabs-menace-tab" data-toggle="pill" href="#vert-tabs-menace" role="tab" aria-controls="vert-tabs-menace" aria-selected="false">Ameaças</a>
                                             </div>
                                         </div>
+                                        <div className="col-7 col-sm-11">
+                                            <div className="tab-content" id="vert-tabs-tabContent">
+                                                <div className="tab-pane text-left fade active show" id="vert-tabs-hero" role="tabpanel" aria-labelledby="vert-tabs-hero-tab">
+                                                    <RPGDashboard title={"Heróis"} exibeMana={true} data={Players.get()} />
+                                                </div>
+                                                <div className="tab-pane fade" id="vert-tabs-menace" role="tabpanel" aria-labelledby="vert-tabs-menace-tab">
+                                                    <RPGDashboard title={"Ameaças"} exibeMana={false} data={Ameacas.get()} />
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </>}
                             </div>
                         </div>
                         <div className="tab-pane fade" id="custom-tabs-one-lugares" role="tabpanel" aria-labelledby="custom-tabs-one-lugares-tab">
