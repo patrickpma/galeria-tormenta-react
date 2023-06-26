@@ -42,7 +42,7 @@ function GaleriaPC(props) {
                 }).map((c, index) => {
                     return <div className="grid-block" key={index}>
                         <div className="tile" key={index}>
-                            <img key={index} className="tile-img tile-img img-gray" title={c.title} src={c.image} alt={c.title} onClick={() => handleShow(c)} />
+                            <img key={index} className="tile-img tile-img" title={c.title} src={c.image} alt={c.title} onClick={() => handleShow(c)} />
                         </div>
                     </div>
                 })}

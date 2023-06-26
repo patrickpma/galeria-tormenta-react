@@ -55,6 +55,38 @@ function get() {
             "ultimaAparicao": "Fortaleza de Arsenal",
             "situacao": "Morto"
         }
+        ,
+        {
+            "title": "Thwor Ironfist |Ayrrak dos Duyshidakk e General da Alianca Negra",
+            "image": require("./img/thwor.jpg"),
+            "ultimaAparicao": "Farden durante o Eclipse de Sangue",
+            "situacao": "Vivo"
+        }
+        ,
+        {
+            "title": "Hwurok |Filho de Thwor Ironfist",
+            "image": require("./img/Hwurok.jpg"),
+            "ultimaAparicao": "Lamnor",
+            "situacao": "Vivo"
+        }
+        ,
+        {
+            "title": "Astromiun |O primeiro clerigo de Glorienn em Arton",
+            "image": require("./img/astromiun.JPG"),
+            "ultimaAparicao": "Desconhecido",
+            "situacao": "Vivo"
+        },
+        {
+            "title": "Vorag |Xamã de Graolak (deus menor dos goblins). Lider de Atalaia da Agua Cinzenta",
+            "image": require("./img/Vorag.jpg"),
+            "ultimaAparicao": "Atalaia da Agua Cinzenta",
+            "situacao": "Vivo"
+        }, {
+            "title": " |Clerigo de Ragnar",
+            "image": require("./img/clerigo-ragnar.jpg"),
+            "ultimaAparicao": "Atalaia da Agua Cinzenta",
+            "situacao": "Vivo"
+        }
     ]
     return chars;
 }

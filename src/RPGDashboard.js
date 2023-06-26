@@ -19,7 +19,7 @@ function RPGDashboard(props) {
     const handleAtack = (index, custo) => {
         if (index === -1)
             return;
-        
+
         let playersCopy = [...players];
         let pmsAtuais = playersCopy[index].atualPM;
 
@@ -47,28 +47,15 @@ function RPGDashboard(props) {
         setPlayers(playersCopy);
     }
     return (
-        <div className="card card-secondary card-outline">
-            <div className="card-header">
-                <h2 className="card-title"><b>{props.title}</b></h2>
-                <div className="card-tools">
-                    <button type="button" className="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                        <i className="fas fa-minus"></i>
-                    </button>
-                    <button type="button" className="btn btn-tool" data-card-widget="maximize"><i className="fas fa-expand" /></button>
-                </div>
+        <div className="row">
+            <div className="col-md-9">
+                <PlayersCard data={players} title={props.title} onChangeData={changeHandle} onCharSet={charSetHandle} />
+                <Sheet data={player} onAtack={handleAtack} onDamage={handleDamage} />
             </div>
-            <div className="card-body">
-                <div className="row">
-                    <div className="col-md-6">
-                        <PlayersCard data={players} title={props.title} onChangeData={changeHandle} onCharSet={charSetHandle} />
-                        <Sheet data={player} onAtack={handleAtack} onDamage={handleDamage} />
-                    </div>
-                    <div className="col-md-6">
-                        <LifeCard exibeMana={props.exibeMana} data={players} />
-                    </div>
-                </div>
+            <div className="col-md-3">
+                <LifeCard exibeMana={props.exibeMana} data={players} />
             </div>
-        </div >
+        </div>
     );
 }
 

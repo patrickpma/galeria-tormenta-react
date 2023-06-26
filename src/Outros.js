@@ -108,7 +108,14 @@ function get() {
             "image": require("./img/Larianny.jpg"),
             "ultimaAparicao": "Yuvallin",
             "situacao": "Vivo"
+        },
+        {
+            "title": "Revelor |Elfo, ex- Espada de Glorienn, atualmente tranformado em zumbi.",
+            "image": require("./img/revelor.jpg"),
+            "ultimaAparicao": "Yuvallin",
+            "situacao": "Morto-vivo"
         }
+
     ]
     return chars;
 }
