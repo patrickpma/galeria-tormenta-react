@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Utils } from './Utils';
 
+import background from "../../src/img/bg/paladina.jpg";
+
 function Login(props) {
     const [user, setUser] = useState({});
 
@@ -14,8 +16,8 @@ function Login(props) {
         setUser({ ...user, [name]: value });
     }
     return (
-        <div className="login-page">
-            <div className="card card-primary">
+        <div className="login-page" style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+            <div className="card card-outline card-secondary">
                 <div className="card-header">
                     <h3 className="card-title">Acesso Restrito</h3>
                 </div>
@@ -35,7 +37,7 @@ function Login(props) {
                     </div>
                 </form>
             </div>
-        </div>
+        </div >
 
     );
 }
