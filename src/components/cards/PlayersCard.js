@@ -181,8 +181,8 @@ function PlayersCard(props) {
                     </div>
                 </div>
             </div>
-            <div class="card-footer">
-                <button type="submit" class="btn btn-primary float-right" onClick={() => handleRecoveryAll(char.index)}>Recuperar Tudo</button>
+            <div className="card-footer">
+                <button type="submit" className="btn btn-primary float-right" onClick={() => handleRecoveryAll(char.index)}>Recuperar Tudo</button>
             </div>
         </div>
     );

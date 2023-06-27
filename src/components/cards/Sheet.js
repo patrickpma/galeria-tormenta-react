@@ -217,7 +217,7 @@ function Sheet(props) {
                             <div className="input-group">
                                 <input type="text" id="defesa" className="form-control" placeholder='' onChange={handleChangeNumeric} value={data.defesa} />
                                 <div className="input-group-append">
-                                    <div className="input-group-text" onClick={calcDefesa}><i class="fas fa-shield-alt"></i></div>
+                                    <div className="input-group-text" onClick={calcDefesa}><i className="fas fa-shield-alt"></i></div>
                                 </div>
                             </div>
                         </div>

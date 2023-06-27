@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import * as Apps from '../src';
 import GaleriaPC from './GaleriaPC';
+import GaleriaLugares from './GaleriaLugares';
 import { Players } from './components/Players';
 import Login from './components/Login';
 import RPGDashboard from './RPGDashboard';
@@ -69,6 +70,7 @@ function Principia() {
                                             <a className="nav-link" id="vert-tabs-profile-tab" data-toggle="pill" href="#vert-tabs-profile" role="tab" aria-controls="vert-tabs-profile" aria-selected="false">Inimigos</a>
                                             <a className="nav-link" id="vert-tabs-messages-tab" data-toggle="pill" href="#vert-tabs-messages" role="tab" aria-controls="vert-tabs-messages" aria-selected="false">Deuses</a>
                                             <a className="nav-link " id="vert-tabs-settings-tab" data-toggle="pill" href="#vert-tabs-settings" role="tab" aria-controls="vert-tabs-settings" aria-selected="true">Outros</a>
+                                            <a className="nav-link " id="vert-tabs-places-tab" data-toggle="pill" href="#vert-tabs-places" role="tab" aria-controls="vert-tabs-places" aria-selected="true">Lugares</a>
                                         </div>
                                     </div>
                                     <div className="col-7 col-sm-11">
@@ -84,6 +86,9 @@ function Principia() {
                                             </div>
                                             <div className="tab-pane fade " id="vert-tabs-settings" role="tabpanel" aria-labelledby="vert-tabs-settings-tab">
                                                 <GaleriaPC data={Apps.Outros.get()} />
+                                            </div>
+                                            <div className="tab-pane fade " id="vert-tabs-places" role="tabpanel" aria-labelledby="vert-tabs-places-tab">
+                                                <GaleriaLugares data={Apps.Lugares.get()} />
                                             </div>
                                         </div>
                                     </div>

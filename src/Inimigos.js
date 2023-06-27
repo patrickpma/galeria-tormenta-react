@@ -82,7 +82,7 @@ function get() {
             "ultimaAparicao": "Atalaia da Agua Cinzenta",
             "situacao": "Vivo"
         }, {
-            "title": " |Clerigo de Ragnar",
+            "title": "Maegor |Clerigo de Ragnar",
             "image": require("./img/clerigo-ragnar.jpg"),
             "ultimaAparicao": "Atalaia da Agua Cinzenta",
             "situacao": "Vivo"
