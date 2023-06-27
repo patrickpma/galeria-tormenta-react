@@ -31,7 +31,7 @@ function Principia() {
                             <li className="nav-item">
                                 <a className="nav-link " id="custom-tabs-one-lugares-tab" data-toggle="pill" href="#custom-tabs-one-lugares" role="tab" aria-controls="custom-tabs-one-lugares" aria-selected="true">Galeria</a>
                             </li>
-                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="#" onClick={() => setAuth(false)}><i className="fas fa-sign-out-alt"></i></a></li></ul>
+                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" onClick={() => setAuth(false)}><i className="fas fa-sign-out-alt"></i></a></li></ul>
                         </ul>
 
                     </div>
