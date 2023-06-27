@@ -8,12 +8,13 @@ import { Ameacas } from './components/Ameacas';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 function Principia() {
     const [auth, setAuth] = useState(false);
 
     const handleAuth = (loged) => {
-        setAuth(loged);
+        if (loged)
+            setAuth(loged);
+        else alert("Usuario ou senha incorretos.");
     }
 
     return (
@@ -30,8 +31,11 @@ function Principia() {
                             <li className="nav-item">
                                 <a className="nav-link " id="custom-tabs-one-lugares-tab" data-toggle="pill" href="#custom-tabs-one-lugares" role="tab" aria-controls="custom-tabs-one-lugares" aria-selected="true">Galeria</a>
                             </li>
+                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="#" onClick={() => setAuth(false)}><i className="fas fa-sign-out-alt"></i></a></li></ul>
                         </ul>
+
                     </div>
+
                     <div className="card-body">
                         <div className="tab-content" id="custom-tabs-one-tabContent">
                             <div className="tab-pane fade active show" id="custom-tabs-one-dash" role="tabpanel" aria-labelledby="custom-tabs-one-dash-tab">

@@ -14,12 +14,12 @@ function Login(props) {
         setUser({ ...user, [name]: value });
     }
     return (
-        <div className="row" style={{paddingTop: '10%', paddingLeft: '20%', paddingRight: '20%'}}>
-            <div className="col-5 col-sm-12">
-                <div className="card card-primary">
-                    <div className="card-header">
-                        <h3 className="card-title">Acesso Restrito</h3>
-                    </div>
+        <div className="login-page">
+            <div className="card card-primary">
+                <div className="card-header">
+                    <h3 className="card-title">Acesso Restrito</h3>
+                </div>
+                <form onSubmit={handleSubmit}>
                     <div className="card-body">
                         <div className="form-group">
                             <label>Email address</label>
@@ -31,9 +31,9 @@ function Login(props) {
                         </div>
                     </div>
                     <div className="card-footer">
-                        <input type="button" className="btn btn-primary" value="Enviar" onClick={handleSubmit} />
+                        <button type="submit" className="btn btn-primary float-right">Entrar</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 
