@@ -8,6 +8,7 @@ import { Ameacas } from './components/Ameacas';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 function Principia() {
     const [auth, setAuth] = useState(false);
 
@@ -31,7 +32,7 @@ function Principia() {
                             <li className="nav-item">
                                 <a className="nav-link " id="custom-tabs-one-lugares-tab" data-toggle="pill" href="#custom-tabs-one-lugares" role="tab" aria-controls="custom-tabs-one-lugares" aria-selected="true">Galeria</a>
                             </li>
-                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" onClick={() => setAuth(false)}><i className="fas fa-sign-out-alt"></i></a></li></ul>
+                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="https://3detormenta.netlify.app/"><i className="fas fa-sign-out-alt"></i></a></li></ul>
                         </ul>
 
                     </div>
