@@ -3,5 +3,5 @@ export const Utils = {
 };
 
 function auth(user, pwd) {
-    return (user === 'patrick.cosme@gmail.com' && pwd === 'sh288157');
+    return (user === 'admin' && pwd === '1234');
 }

@@ -14,16 +14,21 @@ function Principia() {
     const [auth, setAuth] = useState(false);
 
     const handleAuth = (loged) => {
-        if (loged)
+        if (loged) {
             setAuth(loged);
+        }
         else alert("Usuario ou senha incorretos.");
+    }
+
+    const isLoged = () => {
+        return auth;
     }
 
     return (
         <React.Fragment>
-            {!auth &&
+            {!isLoged() &&
                 <Login authenticate={handleAuth}></Login>
-            }{auth &&
+            }{isLoged() &&
                 <div className="card card-primary card-tabs">
                     <div className="card-header p-0 pt-1">
                         <ul className="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
@@ -93,10 +98,6 @@ function Principia() {
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
                         </div>
                     </div>
