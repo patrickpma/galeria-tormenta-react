@@ -7,7 +7,9 @@ function Login(props) {
     const [user, setUser] = useState({});
 
     const handleSubmit = () => {
-        props.authenticate(Utils.auth(user.userName, user.pwd));
+        let success = Utils.auth(user.userName, user.pwd);
+        localStorage.setItem("success",success);
+        props.authenticate(success);
     }
 
     const handleChange = (e) => {
@@ -16,8 +18,8 @@ function Login(props) {
         setUser({ ...user, [name]: value });
     }
     return (
-        <div className="login-page" style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-            <div className="card card-primary">
+        <div className="login-page" style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+            <div className="card card-primary" style={{opacity: '0.7', width: '25%', minWidth: '250px'}}>
                 <div className="card-header">
                     <h3 className="card-title">Acesso Restrito</h3>
                 </div>

@@ -11,17 +11,17 @@ function get() {
         const element = ameacas[index];
         if (element.quantidade && element.quantidade > 1) {
             for (let j = 0; j < element.quantidade; j++) {
-                let x = {...element, nome:  element.nome + " " + parseInt(j+1)};
+                let x = { ...element, nome: element.nome + " " + parseInt(j + 1) };
                 ameacasRetorno.push(x);
             }
-        }else {
-            let x = {...element, nome:  element.nome};
+        } else {
+            let x = { ...element, nome: element.nome };
             ameacasRetorno.push(x);
         }
     }
-    debugger;
-   for (let index = 0; index < ameacasRetorno.length; index++) {
-    ameacasRetorno[index].index = index;
-   }
+
+    for (let index = 0; index < ameacasRetorno.length; index++) {
+        ameacasRetorno[index].index = index;
+    }
     return ameacasRetorno;
 }
