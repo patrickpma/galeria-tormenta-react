@@ -40,7 +40,7 @@ function Principia() {
                             <li className="nav-item">
                                 <a className="nav-link " id="custom-tabs-one-lugares-tab" data-toggle="pill" href="#custom-tabs-one-lugares" role="tab" aria-controls="custom-tabs-one-lugares" aria-selected="true">Galeria</a>
                             </li>
-                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="http://localhost:3000/" onClick={Sair}><i title="Sair" className="fas fa-dungeon"></i></a></li></ul>
+                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="https://tormentinha.netlify.app/" onClick={Sair}><i title="Sair" className="fas fa-dungeon"></i></a></li></ul>
                         </ul>
                     </div>
                     <div className="card-body">

@@ -19,7 +19,7 @@ function Login(props) {
     }
     return (
         <div className="login-page" style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
-            <div className="card card-primary" style={{opacity: '0.7', width: '25%', minWidth: '250px'}}>
+            <div className="card card-primary card-outline" style={{opacity: '0.7', width: '25%', minWidth: '250px'}}>
                 <div className="card-header">
                     <h3 className="card-title">Acesso Restrito</h3>
                 </div>
