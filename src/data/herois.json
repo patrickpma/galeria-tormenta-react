@@ -2,10 +2,10 @@
 {
     "index": 1,
     "nome": "Sasaki",
-    "totalPV": 25,
-    "atualPV": 25,
-    "totalPM": 45,
-    "atualPM": 45,
+    "totalPV": 35,
+    "atualPV": 35,
+    "totalPM": 35,
+    "atualPM": 35,
     "escala": 1,
     "AtributoAtaque": 5,
     "Forca": 5,
@@ -26,7 +26,7 @@
     "Forca": 0,
     "Habilidade": 8,
     "Resistencia": 5,
-    "Armadura": 5,
+    "Armadura": 6,
     "PdF": 1
 },
 {
