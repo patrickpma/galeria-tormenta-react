@@ -3,7 +3,7 @@ import { Utils } from './Utils';
 
 import background from "../../src/img/bg/paladina.jpg";
 
-function Login(props) {
+export function Login(props) {
     const [user, setUser] = useState({});
 
     const handleSubmit = () => {
