@@ -40,6 +40,9 @@ function Principia() {
                                 <a className="nav-link active" id="custom-tabs-one-dash-tab" data-toggle="pill" href="#custom-tabs-one-dash" role="tab" aria-controls="custom-tabs-one-dash" aria-selected="true">Dashboard</a>
                             </li>
                             <li className="nav-item">
+                                <a className="nav-link" id="custom-tabs-one-map-tab" data-toggle="pill" href="#custom-tabs-one-map" role="tab" aria-controls="custom-tabs-one-map" aria-selected="true">Mapa</a>
+                            </li>
+                            <li className="nav-item">
                                 <a className="nav-link " id="custom-tabs-one-lugares-tab" data-toggle="pill" href="#custom-tabs-one-lugares" role="tab" aria-controls="custom-tabs-one-lugares" aria-selected="true">Galeria</a>
                             </li>
                             <li className="nav-item">
@@ -58,6 +61,19 @@ function Principia() {
                                     </div>
 
                                 </div>
+                            </div>
+                            <div className="tab-pane fade" id="custom-tabs-one-map" role="tabpanel" aria-labelledby="custom-tabs-one-map-tab">
+                                <div className="row">
+                                    <div className="col-sm-12">
+                                        <section className="mapa">
+                                            <h3 className="titulo-principal">Arton</h3>
+                                            <p>O Reinado e além.</p>
+                                            <iframe src="https://mapadearton.fichasdenimb.com.br/" width="100%" height="800" allowfullscreen="" loading="lazy"></iframe>
+                                        </section>
+                                    </div>
+                                </div>
+
+
                             </div>
                             <div className="tab-pane fade" id="custom-tabs-one-lugares" role="tabpanel" aria-labelledby="custom-tabs-one-lugares-tab">
                                 <h4>Galeria</h4>
@@ -93,8 +109,8 @@ function Principia() {
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="custom-tabs-enigma" role="tabpanel" aria-labelledby="custom-tabs-enigma-tab">
-                                <Switches/>
-                                </div>
+                                <Switches />
+                            </div>
                         </div>
                     </div>
                 </div>}
