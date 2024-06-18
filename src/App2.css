@@ -1,0 +1,30 @@
+/* App.css */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-pane {
+  width: 20%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-pane {
+  width: 80%;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clickable-image {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+}

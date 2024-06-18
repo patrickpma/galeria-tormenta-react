@@ -4,6 +4,7 @@ import GaleriaPC from './GaleriaPC';
 import GaleriaLugares from './GaleriaLugares';
 import { Players } from './components/Players';
 import Login from './components/Login';
+import RPGDashboard2 from './RPGDashboard2';
 import RPGDashboard from './RPGDashboard';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -40,6 +41,9 @@ function Principia() {
                                 <a className="nav-link active" id="custom-tabs-one-dash-tab" data-toggle="pill" href="#custom-tabs-one-dash" role="tab" aria-controls="custom-tabs-one-dash" aria-selected="true">Dashboard</a>
                             </li>
                             <li className="nav-item">
+                                <a className="nav-link" id="custom-tabs-one-dash-tab2" data-toggle="pill" href="#custom-tabs-one-dash2" role="tab" aria-controls="custom-tabs-one-dash2" aria-selected="true">Dashboard 2</a>
+                            </li>
+                            <li className="nav-item">
                                 <a className="nav-link" id="custom-tabs-one-map-tab" data-toggle="pill" href="#custom-tabs-one-map" role="tab" aria-controls="custom-tabs-one-map" aria-selected="true">Mapa</a>
                             </li>
                             <li className="nav-item">
@@ -58,6 +62,15 @@ function Principia() {
                                 <div className="row">
                                     <div className="col-sm-12">
                                         <RPGDashboard title={"Heróis"} exibeMana={true} data={Players.get()} />
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="tab-pane fade" id="custom-tabs-one-dash2" role="tabpanel" aria-labelledby="custom-tabs-one-dash-tab2">
+
+                                <div className="row">
+                                    <div className="col-sm-12">
+                                        <RPGDashboard2 title={"Heróis"} exibeMana={true} data={Players.get()} />
                                     </div>
 
                                 </div>

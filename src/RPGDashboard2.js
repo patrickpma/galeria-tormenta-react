@@ -2,9 +2,8 @@ import { useState } from 'react';
 import PlayersCard from './components/cards/PlayersCard';
 import LifeCard from './components/cards/LifeCard';
 import Sheet from './components/cards/Sheet';
-import MasterCard from './components/cards/MasterCard';
 
-function RPGDashboard(props) {
+function RPGDashboard2(props) {
 
     const [players, setPlayers] = useState(props.data);
     const [player, setPlayer] = useState({});
@@ -50,13 +49,14 @@ function RPGDashboard(props) {
     return (
         <div className="row">
             <div className="col-md-9">
-            <MasterCard data={players} title={props.title} onChangeData={changeHandle} onCharSet={charSetHandle} />
+                <PlayersCard data={players} title={props.title} onChangeData={changeHandle} onCharSet={charSetHandle} />
+                <Sheet data={player} onAtack={handleAtack} onDamage={handleDamage} />
             </div>
             <div className="col-md-3">
-            <LifeCard exibeMana={props.exibeMana} data={players} />
+                <LifeCard exibeMana={props.exibeMana} data={players} />
             </div>
         </div>
     );
 }
 
-export default RPGDashboard;
+export default RPGDashboard2;
