@@ -81,37 +81,37 @@ function Switches(props) {
                     <div className={`col-12 col-md-${12}`}>
                         <div className="custom-control custom-switch">
                             <input type="checkbox" className="custom-control-input" id={1} checked={form[1]} onChange={handleChange} disabled={ultimaUsada === 1} />
-                            <label className="custom-control-label" for="1">Alavanca Um</label>
+                            <label className="custom-control-label" htmlFor="1">Alavanca Um</label>
                         </div>
                     </div>
                     <div className={`col-12 col-md-${12}`}>
                         <div className="custom-control custom-switch">
                             <input type="checkbox" className="custom-control-input" id={2} checked={form[2]} onChange={handleChange} disabled={ultimaUsada === 2} />
-                            <label className="custom-control-label" for="2">Alavanca Dois</label>
+                            <label className="custom-control-label" htmlFor="2">Alavanca Dois</label>
                         </div>
                     </div>
                     <div className={`col-12 col-md-${12}`}>
                         <div className="custom-control custom-switch">
                             <input type="checkbox" className="custom-control-input" id={3} checked={form[3]} onChange={handleChange} disabled={ultimaUsada === 3} />
-                            <label className="custom-control-label" for="3">Alavanca Tres</label>
+                            <label className="custom-control-label" htmlFor="3">Alavanca Tres</label>
                         </div>
                     </div>
                     <div className={`col-12 col-md-${12}`}>
                         <div className="custom-control custom-switch">
                             <input type="checkbox" className="custom-control-input" id={4} checked={form[4]} onChange={handleChange} disabled={ultimaUsada === 4} />
-                            <label className="custom-control-label" for="4">Alavanca Quatro</label>
+                            <label className="custom-control-label" htmlFor="4">Alavanca Quatro</label>
                         </div>
                     </div>
                     <div className={`col-12 col-md-${12}`}>
                         <div className="custom-control custom-switch">
                             <input type="checkbox" className="custom-control-input" id={5} checked={form[5]} onChange={handleChange} disabled={ultimaUsada === 5} />
-                            <label className="custom-control-label" for="5">Alavanca Cinco</label>
+                            <label className="custom-control-label" htmlFor="5">Alavanca Cinco</label>
                         </div>
                     </div>
                     <div className={`col-12 col-md-${12}`}>
                         <div className="custom-control custom-switch">
                             <input type="checkbox" className="custom-control-input" id="6" checked={reverse} onChange={handleMode} />
-                            <label className="custom-control-label" for="6">Alavanca Seis</label>
+                            <label className="custom-control-label" htmlFor="6">Alavanca Seis</label>
                         </div>
                     </div>
                 </div>

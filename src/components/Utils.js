@@ -3,5 +3,5 @@ export const Utils = {
 };
 
 function auth(user, pwd) {
-    return (user === 'admin' && pwd === '1234');
+    return (user.toLowerCase() === 'admin' && pwd === 'qwe@2510');
 }

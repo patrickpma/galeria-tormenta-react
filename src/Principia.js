@@ -52,7 +52,7 @@ function Principia() {
                             <li className="nav-item">
                                 <a className="nav-link " id="custom-tabs-one-enigma-tab" data-toggle="pill" href="#custom-tabs-enigma" role="tab" aria-controls="custom-tabs-enigma" aria-selected="true">Enigma</a>
                             </li>
-                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="https://tormentinha.netlify.app/" onClick={Sair}><i title="Sair" className="fas fa-dungeon"></i></a></li></ul>
+                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="http://localhost:8080/tormenta/" onClick={Sair}><i title="Sair" className="fas fa-dungeon"></i></a></li></ul>
                         </ul>
                     </div>
                     <div className="card-body">
@@ -81,7 +81,7 @@ function Principia() {
                                         <section className="mapa">
                                             <h3 className="titulo-principal">Arton</h3>
                                             <p>O Reinado e além.</p>
-                                            <iframe src="https://mapadearton.fichasdenimb.com.br/" width="100%" height="800" allowfullscreen="" loading="lazy"></iframe>
+                                            <iframe src="https://mapadearton.fichasdenimb.com.br/" width="100%" height="800" loading="lazy"></iframe>
                                         </section>
                                     </div>
                                 </div>
