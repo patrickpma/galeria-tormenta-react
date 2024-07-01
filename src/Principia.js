@@ -8,7 +8,7 @@ import RPGDashboard2 from './RPGDashboard2';
 import RPGDashboard from './RPGDashboard';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Switches from './components/cards/Switches';
+import Monsters from './components/cards/Monsters';
 
 
 function Principia() {
@@ -50,7 +50,7 @@ function Principia() {
                                 <a className="nav-link " id="custom-tabs-one-lugares-tab" data-toggle="pill" href="#custom-tabs-one-lugares" role="tab" aria-controls="custom-tabs-one-lugares" aria-selected="true">Galeria</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " id="custom-tabs-one-enigma-tab" data-toggle="pill" href="#custom-tabs-enigma" role="tab" aria-controls="custom-tabs-enigma" aria-selected="true">Enigma</a>
+                                <a className="nav-link " id="custom-tabs-one-enigma-tab" data-toggle="pill" href="#custom-tabs-enigma" role="tab" aria-controls="custom-tabs-enigma" aria-selected="true">Monstros</a>
                             </li>
                             <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="http://localhost:8080/tormenta/" onClick={Sair}><i title="Sair" className="fas fa-dungeon"></i></a></li></ul>
                         </ul>
@@ -81,7 +81,7 @@ function Principia() {
                                         <section className="mapa">
                                             <h3 className="titulo-principal">Arton</h3>
                                             <p>O Reinado e além.</p>
-                                            <iframe src="https://mapadearton.fichasdenimb.com.br/" width="100%" height="800" loading="lazy"></iframe>
+                                            <iframe src="https://mapadearton.fichasdenimb.com.br/" width="100%" height="800" loading="lazy" />
                                         </section>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@ function Principia() {
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="custom-tabs-enigma" role="tabpanel" aria-labelledby="custom-tabs-enigma-tab">
-                                <Switches />
+                                <Monsters />
                             </div>
                         </div>
                     </div>

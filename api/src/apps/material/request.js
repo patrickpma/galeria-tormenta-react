@@ -1,9 +1,5 @@
-const { v4: uuidv4 } = require('uuid');
+
 const router = require('express').Router();
-const authorize = require('../../_middleware/authorize');
-const requestService = require('../../_services/request-service');
-const userService = require('../../_services/user-service');
-const emailService = require('../../_services/email-service');
 
 router.get('/v1/hero/', async function (req, res, next) {
     try {
@@ -11,6 +7,24 @@ router.get('/v1/hero/', async function (req, res, next) {
         const rows = await req.db.Hero.findAll();
 
         res.status(200).send({ success: true, data: rows });
+    } catch (error) {
+        next(error);
+    }
+});
+
+router.get('/v1/hero_and_monster/', async function (req, res, next) {
+    try {
+
+        const { Op } = require('sequelize');
+
+        const heros = await req.db.Hero.findAll();
+        const monsters = await req.db.Monster.findAll({
+            where: {
+                discarted: 0, available_initiative: 1
+            }
+        });
+
+        res.status(200).send({ success: true, data: { heros, monsters } });
     } catch (error) {
         next(error);
     }
@@ -25,7 +39,7 @@ router.get('/v1/item/', async function (req, res, next) {
     }
 });
 
-router.get('/v1/request/:id', authorize(), async function (req, res, next) {
+router.get('/v1/request/:id', async function (req, res, next) {
     let msg = "";
     try {
         const row = await requestService.findById(req.params.id, req.user, req.db);
@@ -66,7 +80,7 @@ router.put('/v1/hero/life/:id', async function (req, res, next) {
     try {
         const row = await req.db.Hero.findByPk(req.params.id);
         let x = JSON.parse(row.props);
-        x.atualPV = x.atualPV + life
+        x.atualPV = x.atualPV + life;
         row.props = JSON.stringify(x);
         row.save();
         res.status(200).send({ success: true });
@@ -80,7 +94,7 @@ router.put('/v1/hero/mana/:id', async function (req, res, next) {
     try {
         const row = await req.db.Hero.findByPk(req.params.id);
         let x = JSON.parse(row.props);
-        x.atualPM = x.atualPM + mana
+        x.atualPM = x.atualPM + mana;
         row.props = JSON.stringify(x);
         row.save();
         res.status(200).send({ success: true });
@@ -120,5 +134,6 @@ router.post('/v1/item/', async function (req, res, next) {
         next(error);
     }
 });
+
 
 module.exports = router;

@@ -27,6 +27,9 @@ module.exports = (config, dbSync) => {
     db.User = require('./models/user')(sequelize, Sequelize);
     db.Hero = require('./models/hero')(sequelize, Sequelize);
     db.Item = require('./models/item')(sequelize, Sequelize);
+    db.Initiative = require('./models/initiative')(sequelize, Sequelize);
+    db.Monster = require('./models/monster')(sequelize, Sequelize);
+    db.Danger = require('./models/danger')(sequelize, Sequelize);
 
     if (dbSync)
         db.sequelize.sync();
