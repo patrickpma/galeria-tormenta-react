@@ -706,3 +706,967 @@
 2024-07-01 08:59:52 - Finished tormenta.exe
 2024-07-01 08:59:53 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2024-07-01 08:59:53 - Started 22604
+2024-07-01 17:25:37 - Stopping tormenta.exe
+2024-07-01 17:25:37 - ProcessKill 22604
+2024-07-01 17:25:37 - Found child process: 26392 Name: conhost.exe
+2024-07-01 17:25:37 - Found child process: 27248 Name: node.exe
+2024-07-01 17:25:37 - Stopping process 26392
+2024-07-01 17:25:38 - Send SIGINT 26392
+2024-07-01 17:25:38 - SIGINT to 26392 failed - Killing as fallback
+2024-07-01 17:25:38 - Stopping process 27248
+2024-07-01 17:25:38 - Send SIGINT 27248
+2024-07-01 17:25:38 - SIGINT to 27248 failed - Killing as fallback
+2024-07-01 17:25:38 - Stopping process 22604
+2024-07-01 17:25:38 - Send SIGINT 22604
+2024-07-01 17:25:38 - SIGINT to 22604 failed - Killing as fallback
+2024-07-01 17:25:38 - Finished tormenta.exe
+2024-07-01 17:25:39 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-01 17:25:39 - Started 6788
+2024-07-01 17:31:12 - Stopping tormenta.exe
+2024-07-01 17:31:12 - ProcessKill 6788
+2024-07-01 17:31:12 - Found child process: 10324 Name: conhost.exe
+2024-07-01 17:31:12 - Found child process: 6624 Name: node.exe
+2024-07-01 17:31:12 - Stopping process 10324
+2024-07-01 17:31:12 - Send SIGINT 10324
+2024-07-01 17:31:12 - SIGINT to 10324 failed - Killing as fallback
+2024-07-01 17:31:13 - Stopping process 6624
+2024-07-01 17:31:13 - Send SIGINT 6624
+2024-07-01 17:31:13 - SIGINT to 6624 failed - Killing as fallback
+2024-07-01 17:31:13 - Stopping process 6788
+2024-07-01 17:31:13 - Send SIGINT 6788
+2024-07-01 17:31:13 - SIGINT to 6788 failed - Killing as fallback
+2024-07-01 17:31:13 - Finished tormenta.exe
+2024-07-01 17:31:13 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-01 17:31:13 - Started 24348
+2024-07-01 17:33:35 - Stopping tormenta.exe
+2024-07-01 17:33:35 - ProcessKill 24348
+2024-07-01 17:33:35 - Found child process: 16500 Name: conhost.exe
+2024-07-01 17:33:35 - Found child process: 14220 Name: node.exe
+2024-07-01 17:33:35 - Stopping process 16500
+2024-07-01 17:33:35 - Send SIGINT 16500
+2024-07-01 17:33:35 - SIGINT to 16500 failed - Killing as fallback
+2024-07-01 17:33:35 - Stopping process 14220
+2024-07-01 17:33:35 - Send SIGINT 14220
+2024-07-01 17:33:35 - SIGINT to 14220 failed - Killing as fallback
+2024-07-01 17:33:35 - Stopping process 24348
+2024-07-01 17:33:35 - Send SIGINT 24348
+2024-07-01 17:33:35 - SIGINT to 24348 failed - Killing as fallback
+2024-07-01 17:33:35 - Finished tormenta.exe
+2024-07-01 17:33:36 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-01 17:33:36 - Started 16288
+2024-07-01 17:41:26 - Stopping tormenta.exe
+2024-07-01 17:41:26 - ProcessKill 16288
+2024-07-01 17:41:26 - Found child process: 2524 Name: conhost.exe
+2024-07-01 17:41:26 - Found child process: 25076 Name: node.exe
+2024-07-01 17:41:26 - Stopping process 2524
+2024-07-01 17:41:26 - Send SIGINT 2524
+2024-07-01 17:41:26 - SIGINT to 2524 failed - Killing as fallback
+2024-07-01 17:41:26 - Stopping process 25076
+2024-07-01 17:41:26 - Send SIGINT 25076
+2024-07-01 17:41:26 - SIGINT to 25076 failed - Killing as fallback
+2024-07-01 17:41:26 - Stopping process 16288
+2024-07-01 17:41:26 - Send SIGINT 16288
+2024-07-01 17:41:26 - SIGINT to 16288 failed - Killing as fallback
+2024-07-01 17:41:26 - Finished tormenta.exe
+2024-07-01 17:41:27 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-01 17:41:27 - Started 2308
+2024-07-01 17:42:41 - Stopping tormenta.exe
+2024-07-01 17:42:41 - ProcessKill 2308
+2024-07-01 17:42:41 - Found child process: 25632 Name: conhost.exe
+2024-07-01 17:42:41 - Found child process: 1308 Name: node.exe
+2024-07-01 17:42:41 - Stopping process 25632
+2024-07-01 17:42:41 - Send SIGINT 25632
+2024-07-01 17:42:41 - SIGINT to 25632 failed - Killing as fallback
+2024-07-01 17:42:41 - Stopping process 1308
+2024-07-01 17:42:41 - Send SIGINT 1308
+2024-07-01 17:42:41 - SIGINT to 1308 failed - Killing as fallback
+2024-07-01 17:42:41 - Stopping process 2308
+2024-07-01 17:42:41 - Send SIGINT 2308
+2024-07-01 17:42:41 - SIGINT to 2308 failed - Killing as fallback
+2024-07-01 17:42:41 - Finished tormenta.exe
+2024-07-01 17:50:37 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-01 17:50:37 - Started 20908
+2024-07-01 21:28:30 - Stopping tormenta.exe
+2024-07-01 21:28:30 - ProcessKill 20908
+2024-07-01 21:28:30 - Found child process: 14416 Name: conhost.exe
+2024-07-01 21:28:30 - Found child process: 19988 Name: node.exe
+2024-07-01 21:28:30 - Stopping process 14416
+2024-07-01 21:28:30 - Send SIGINT 14416
+2024-07-01 21:28:30 - SIGINT to 14416 failed - Killing as fallback
+2024-07-01 21:28:30 - Stopping process 19988
+2024-07-01 21:28:30 - Send SIGINT 19988
+2024-07-01 21:28:30 - SIGINT to 19988 failed - Killing as fallback
+2024-07-01 21:28:30 - Stopping process 20908
+2024-07-01 21:28:31 - Send SIGINT 20908
+2024-07-01 21:28:31 - SIGINT to 20908 failed - Killing as fallback
+2024-07-01 21:28:31 - Finished tormenta.exe
+2024-07-01 21:28:31 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-01 21:28:31 - Started 27304
+2024-07-01 21:57:43 - Stopping tormenta.exe
+2024-07-01 21:57:43 - ProcessKill 27304
+2024-07-01 21:57:44 - Found child process: 10628 Name: conhost.exe
+2024-07-01 21:57:44 - Found child process: 10476 Name: node.exe
+2024-07-01 21:57:44 - Stopping process 10628
+2024-07-01 21:57:44 - Send SIGINT 10628
+2024-07-01 21:57:44 - SIGINT to 10628 failed - Killing as fallback
+2024-07-01 21:57:44 - Stopping process 10476
+2024-07-01 21:57:44 - Send SIGINT 10476
+2024-07-01 21:57:44 - SIGINT to 10476 failed - Killing as fallback
+2024-07-01 21:57:44 - Stopping process 27304
+2024-07-01 21:57:44 - Send SIGINT 27304
+2024-07-01 21:57:44 - SIGINT to 27304 failed - Killing as fallback
+2024-07-01 21:57:44 - Finished tormenta.exe
+2024-07-01 21:57:45 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-01 21:57:45 - Started 24292
+2024-07-01 21:58:40 - Stopping tormenta.exe
+2024-07-01 21:58:40 - ProcessKill 24292
+2024-07-01 21:58:40 - Found child process: 3708 Name: conhost.exe
+2024-07-01 21:58:40 - Found child process: 15248 Name: node.exe
+2024-07-01 21:58:40 - Stopping process 3708
+2024-07-01 21:58:40 - Send SIGINT 3708
+2024-07-01 21:58:40 - SIGINT to 3708 failed - Killing as fallback
+2024-07-01 21:58:41 - Stopping process 15248
+2024-07-01 21:58:41 - Send SIGINT 15248
+2024-07-01 21:58:41 - SIGINT to 15248 failed - Killing as fallback
+2024-07-01 21:58:41 - Stopping process 24292
+2024-07-01 21:58:41 - Send SIGINT 24292
+2024-07-01 21:58:41 - SIGINT to 24292 failed - Killing as fallback
+2024-07-01 21:58:41 - Finished tormenta.exe
+2024-07-01 21:58:41 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-01 21:58:41 - Started 21664
+2024-07-02 08:50:25 - Stopping tormenta.exe
+2024-07-02 08:50:25 - ProcessKill 21664
+2024-07-02 08:50:26 - Found child process: 24248 Name: conhost.exe
+2024-07-02 08:50:26 - Found child process: 18132 Name: node.exe
+2024-07-02 08:50:26 - Stopping process 24248
+2024-07-02 08:50:26 - Send SIGINT 24248
+2024-07-02 08:50:26 - SIGINT to 24248 failed - Killing as fallback
+2024-07-02 08:50:26 - Stopping process 18132
+2024-07-02 08:50:26 - Send SIGINT 18132
+2024-07-02 08:50:26 - SIGINT to 18132 failed - Killing as fallback
+2024-07-02 08:50:26 - Stopping process 21664
+2024-07-02 08:50:26 - Send SIGINT 21664
+2024-07-02 08:50:26 - SIGINT to 21664 failed - Killing as fallback
+2024-07-02 08:50:26 - Finished tormenta.exe
+2024-07-02 08:50:27 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 08:50:27 - Started 17536
+2024-07-02 08:52:57 - Stopping tormenta.exe
+2024-07-02 08:52:57 - ProcessKill 17536
+2024-07-02 08:52:57 - Found child process: 26168 Name: conhost.exe
+2024-07-02 08:52:57 - Found child process: 27080 Name: node.exe
+2024-07-02 08:52:57 - Stopping process 26168
+2024-07-02 08:52:57 - Send SIGINT 26168
+2024-07-02 08:52:57 - SIGINT to 26168 failed - Killing as fallback
+2024-07-02 08:52:58 - Stopping process 27080
+2024-07-02 08:52:58 - Send SIGINT 27080
+2024-07-02 08:52:58 - SIGINT to 27080 failed - Killing as fallback
+2024-07-02 08:52:58 - Stopping process 17536
+2024-07-02 08:52:58 - Send SIGINT 17536
+2024-07-02 08:52:58 - SIGINT to 17536 failed - Killing as fallback
+2024-07-02 08:52:58 - Finished tormenta.exe
+2024-07-02 08:52:58 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 08:52:58 - Started 17012
+2024-07-02 09:01:08 - Stopping tormenta.exe
+2024-07-02 09:01:08 - ProcessKill 17012
+2024-07-02 09:01:09 - Found child process: 22804 Name: conhost.exe
+2024-07-02 09:01:09 - Found child process: 20076 Name: node.exe
+2024-07-02 09:01:09 - Stopping process 22804
+2024-07-02 09:01:09 - Send SIGINT 22804
+2024-07-02 09:01:09 - SIGINT to 22804 failed - Killing as fallback
+2024-07-02 09:01:09 - Stopping process 20076
+2024-07-02 09:01:09 - Send SIGINT 20076
+2024-07-02 09:01:09 - SIGINT to 20076 failed - Killing as fallback
+2024-07-02 09:01:09 - Stopping process 17012
+2024-07-02 09:01:09 - Send SIGINT 17012
+2024-07-02 09:01:09 - SIGINT to 17012 failed - Killing as fallback
+2024-07-02 09:01:09 - Finished tormenta.exe
+2024-07-02 09:01:32 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 09:01:32 - Started 24884
+2024-07-02 09:19:58 - Stopping tormenta.exe
+2024-07-02 09:19:58 - ProcessKill 24884
+2024-07-02 09:19:58 - Found child process: 3616 Name: conhost.exe
+2024-07-02 09:19:58 - Found child process: 15240 Name: node.exe
+2024-07-02 09:19:58 - Stopping process 3616
+2024-07-02 09:19:58 - Send SIGINT 3616
+2024-07-02 09:19:58 - SIGINT to 3616 failed - Killing as fallback
+2024-07-02 09:19:59 - Stopping process 15240
+2024-07-02 09:19:59 - Send SIGINT 15240
+2024-07-02 09:19:59 - SIGINT to 15240 failed - Killing as fallback
+2024-07-02 09:19:59 - Stopping process 24884
+2024-07-02 09:19:59 - Send SIGINT 24884
+2024-07-02 09:19:59 - SIGINT to 24884 failed - Killing as fallback
+2024-07-02 09:19:59 - Finished tormenta.exe
+2024-07-02 09:54:55 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 09:54:55 - Started 1140
+2024-07-02 11:11:21 - Stopping tormenta.exe
+2024-07-02 11:11:21 - ProcessKill 1140
+2024-07-02 11:11:21 - Found child process: 21204 Name: conhost.exe
+2024-07-02 11:11:21 - Found child process: 14312 Name: node.exe
+2024-07-02 11:11:21 - Stopping process 21204
+2024-07-02 11:11:21 - Send SIGINT 21204
+2024-07-02 11:11:21 - SIGINT to 21204 failed - Killing as fallback
+2024-07-02 11:11:22 - Stopping process 14312
+2024-07-02 11:11:22 - Send SIGINT 14312
+2024-07-02 11:11:22 - SIGINT to 14312 failed - Killing as fallback
+2024-07-02 11:11:22 - Stopping process 1140
+2024-07-02 11:11:22 - Send SIGINT 1140
+2024-07-02 11:11:22 - SIGINT to 1140 failed - Killing as fallback
+2024-07-02 11:11:22 - Finished tormenta.exe
+2024-07-02 11:11:22 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 11:11:22 - Started 12512
+2024-07-02 11:11:31 - Stopping tormenta.exe
+2024-07-02 11:11:31 - ProcessKill 12512
+2024-07-02 11:11:31 - Found child process: 15788 Name: conhost.exe
+2024-07-02 11:11:31 - Found child process: 26900 Name: node.exe
+2024-07-02 11:11:31 - Stopping process 15788
+2024-07-02 11:11:31 - Send SIGINT 15788
+2024-07-02 11:11:31 - SIGINT to 15788 failed - Killing as fallback
+2024-07-02 11:11:31 - Stopping process 26900
+2024-07-02 11:11:31 - Send SIGINT 26900
+2024-07-02 11:11:31 - SIGINT to 26900 failed - Killing as fallback
+2024-07-02 11:11:31 - Stopping process 12512
+2024-07-02 11:11:31 - Send SIGINT 12512
+2024-07-02 11:11:31 - SIGINT to 12512 failed - Killing as fallback
+2024-07-02 11:11:31 - Finished tormenta.exe
+2024-07-02 11:11:32 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 11:11:32 - Started 524
+2024-07-02 15:05:48 - Stopping tormenta.exe
+2024-07-02 15:05:48 - ProcessKill 524
+2024-07-02 15:05:48 - Found child process: 20800 Name: conhost.exe
+2024-07-02 15:05:48 - Found child process: 7708 Name: node.exe
+2024-07-02 15:05:48 - Stopping process 20800
+2024-07-02 15:05:48 - Send SIGINT 20800
+2024-07-02 15:05:48 - SIGINT to 20800 failed - Killing as fallback
+2024-07-02 15:05:49 - Stopping process 7708
+2024-07-02 15:05:49 - Send SIGINT 7708
+2024-07-02 15:05:49 - SIGINT to 7708 failed - Killing as fallback
+2024-07-02 15:05:49 - Stopping process 524
+2024-07-02 15:05:49 - Send SIGINT 524
+2024-07-02 15:05:49 - SIGINT to 524 failed - Killing as fallback
+2024-07-02 15:05:49 - Finished tormenta.exe
+2024-07-02 15:05:49 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 15:05:49 - Started 11388
+2024-07-02 18:04:21 - Stopping tormenta.exe
+2024-07-02 18:04:21 - ProcessKill 11388
+2024-07-02 18:04:21 - Found child process: 15568 Name: conhost.exe
+2024-07-02 18:04:21 - Found child process: 24496 Name: node.exe
+2024-07-02 18:04:21 - Stopping process 15568
+2024-07-02 18:04:21 - Send SIGINT 15568
+2024-07-02 18:04:21 - SIGINT to 15568 failed - Killing as fallback
+2024-07-02 18:04:21 - Stopping process 24496
+2024-07-02 18:04:21 - Send SIGINT 24496
+2024-07-02 18:04:21 - SIGINT to 24496 failed - Killing as fallback
+2024-07-02 18:04:21 - Stopping process 11388
+2024-07-02 18:04:21 - Send SIGINT 11388
+2024-07-02 18:04:21 - SIGINT to 11388 failed - Killing as fallback
+2024-07-02 18:04:21 - Finished tormenta.exe
+2024-07-02 18:04:22 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 18:04:22 - Started 25344
+2024-07-02 18:05:54 - Stopping tormenta.exe
+2024-07-02 18:05:54 - ProcessKill 25344
+2024-07-02 18:05:55 - Found child process: 20512 Name: conhost.exe
+2024-07-02 18:05:55 - Found child process: 22864 Name: node.exe
+2024-07-02 18:05:55 - Stopping process 20512
+2024-07-02 18:05:55 - Send SIGINT 20512
+2024-07-02 18:05:55 - SIGINT to 20512 failed - Killing as fallback
+2024-07-02 18:05:55 - Stopping process 22864
+2024-07-02 18:05:55 - Send SIGINT 22864
+2024-07-02 18:05:55 - SIGINT to 22864 failed - Killing as fallback
+2024-07-02 18:05:55 - Stopping process 25344
+2024-07-02 18:05:55 - Send SIGINT 25344
+2024-07-02 18:05:55 - SIGINT to 25344 failed - Killing as fallback
+2024-07-02 18:05:55 - Finished tormenta.exe
+2024-07-02 18:05:56 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 18:05:56 - Started 12824
+2024-07-02 18:06:48 - Stopping tormenta.exe
+2024-07-02 18:06:48 - ProcessKill 12824
+2024-07-02 18:06:49 - Found child process: 2900 Name: conhost.exe
+2024-07-02 18:06:49 - Found child process: 24988 Name: node.exe
+2024-07-02 18:06:49 - Stopping process 2900
+2024-07-02 18:06:49 - Send SIGINT 2900
+2024-07-02 18:06:49 - SIGINT to 2900 failed - Killing as fallback
+2024-07-02 18:06:49 - Stopping process 24988
+2024-07-02 18:06:49 - Send SIGINT 24988
+2024-07-02 18:06:49 - SIGINT to 24988 failed - Killing as fallback
+2024-07-02 18:06:49 - Stopping process 12824
+2024-07-02 18:06:49 - Send SIGINT 12824
+2024-07-02 18:06:49 - SIGINT to 12824 failed - Killing as fallback
+2024-07-02 18:06:49 - Finished tormenta.exe
+2024-07-02 18:07:12 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 18:07:12 - Started 26748
+2024-07-02 18:08:21 - Stopping tormenta.exe
+2024-07-02 18:08:21 - ProcessKill 26748
+2024-07-02 18:08:21 - Found child process: 26112 Name: conhost.exe
+2024-07-02 18:08:21 - Found child process: 16296 Name: node.exe
+2024-07-02 18:08:21 - Stopping process 26112
+2024-07-02 18:08:21 - Send SIGINT 26112
+2024-07-02 18:08:22 - SIGINT to 26112 failed - Killing as fallback
+2024-07-02 18:08:22 - Stopping process 16296
+2024-07-02 18:08:22 - Send SIGINT 16296
+2024-07-02 18:08:22 - SIGINT to 16296 failed - Killing as fallback
+2024-07-02 18:08:22 - Stopping process 26748
+2024-07-02 18:08:22 - Send SIGINT 26748
+2024-07-02 18:08:22 - SIGINT to 26748 failed - Killing as fallback
+2024-07-02 18:08:22 - Finished tormenta.exe
+2024-07-02 18:08:22 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 18:08:22 - Started 13536
+2024-07-02 18:09:46 - Stopping tormenta.exe
+2024-07-02 18:09:46 - ProcessKill 13536
+2024-07-02 18:09:46 - Found child process: 21464 Name: conhost.exe
+2024-07-02 18:09:46 - Found child process: 12296 Name: node.exe
+2024-07-02 18:09:46 - Stopping process 21464
+2024-07-02 18:09:46 - Send SIGINT 21464
+2024-07-02 18:09:46 - SIGINT to 21464 failed - Killing as fallback
+2024-07-02 18:09:47 - Stopping process 12296
+2024-07-02 18:09:47 - Send SIGINT 12296
+2024-07-02 18:09:47 - SIGINT to 12296 failed - Killing as fallback
+2024-07-02 18:09:47 - Stopping process 13536
+2024-07-02 18:09:47 - Send SIGINT 13536
+2024-07-02 18:09:47 - SIGINT to 13536 failed - Killing as fallback
+2024-07-02 18:09:47 - Finished tormenta.exe
+2024-07-02 18:09:47 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 18:09:47 - Started 7524
+2024-07-02 18:11:04 - Stopping tormenta.exe
+2024-07-02 18:11:04 - ProcessKill 7524
+2024-07-02 18:11:04 - Found child process: 14800 Name: conhost.exe
+2024-07-02 18:11:04 - Found child process: 23260 Name: node.exe
+2024-07-02 18:11:04 - Stopping process 14800
+2024-07-02 18:11:04 - Send SIGINT 14800
+2024-07-02 18:11:04 - SIGINT to 14800 failed - Killing as fallback
+2024-07-02 18:11:04 - Stopping process 23260
+2024-07-02 18:11:04 - Send SIGINT 23260
+2024-07-02 18:11:04 - SIGINT to 23260 failed - Killing as fallback
+2024-07-02 18:11:04 - Stopping process 7524
+2024-07-02 18:11:05 - Send SIGINT 7524
+2024-07-02 18:11:05 - SIGINT to 7524 failed - Killing as fallback
+2024-07-02 18:11:05 - Finished tormenta.exe
+2024-07-02 18:11:05 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 18:11:05 - Started 26260
+2024-07-02 18:13:36 - Stopping tormenta.exe
+2024-07-02 18:13:36 - ProcessKill 26260
+2024-07-02 18:13:37 - Found child process: 11512 Name: conhost.exe
+2024-07-02 18:13:37 - Found child process: 12476 Name: node.exe
+2024-07-02 18:13:37 - Stopping process 11512
+2024-07-02 18:13:37 - Send SIGINT 11512
+2024-07-02 18:13:37 - SIGINT to 11512 failed - Killing as fallback
+2024-07-02 18:13:37 - Stopping process 12476
+2024-07-02 18:13:37 - Send SIGINT 12476
+2024-07-02 18:13:37 - SIGINT to 12476 failed - Killing as fallback
+2024-07-02 18:13:37 - Stopping process 26260
+2024-07-02 18:13:37 - Send SIGINT 26260
+2024-07-02 18:13:37 - SIGINT to 26260 failed - Killing as fallback
+2024-07-02 18:13:37 - Finished tormenta.exe
+2024-07-02 18:13:38 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-02 18:13:38 - Started 5772
+2024-07-05 16:25:01 - Stopping tormenta.exe
+2024-07-05 16:25:01 - ProcessKill 5772
+2024-07-05 16:25:01 - Found child process: 11272 Name: conhost.exe
+2024-07-05 16:25:01 - Found child process: 27236 Name: node.exe
+2024-07-05 16:25:01 - Stopping process 11272
+2024-07-05 16:25:01 - Send SIGINT 11272
+2024-07-05 16:25:01 - SIGINT to 11272 failed - Killing as fallback
+2024-07-05 16:25:02 - Stopping process 27236
+2024-07-05 16:25:02 - Send SIGINT 27236
+2024-07-05 16:25:02 - SIGINT to 27236 failed - Killing as fallback
+2024-07-05 16:25:02 - Stopping process 5772
+2024-07-05 16:25:02 - Send SIGINT 5772
+2024-07-05 16:25:02 - SIGINT to 5772 failed - Killing as fallback
+2024-07-05 16:25:02 - Finished tormenta.exe
+2024-07-05 16:25:03 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-05 16:25:03 - Started 2240
+2024-07-07 13:03:59 - Stopping tormenta.exe
+2024-07-07 13:03:59 - ProcessKill 2240
+2024-07-07 13:04:00 - Found child process: 26712 Name: conhost.exe
+2024-07-07 13:04:00 - Found child process: 9096 Name: node.exe
+2024-07-07 13:04:00 - Stopping process 26712
+2024-07-07 13:04:00 - Send SIGINT 26712
+2024-07-07 13:04:00 - SIGINT to 26712 failed - Killing as fallback
+2024-07-07 13:04:00 - Stopping process 9096
+2024-07-07 13:04:00 - Send SIGINT 9096
+2024-07-07 13:04:00 - SIGINT to 9096 failed - Killing as fallback
+2024-07-07 13:04:00 - Stopping process 2240
+2024-07-07 13:04:00 - Send SIGINT 2240
+2024-07-07 13:04:00 - SIGINT to 2240 failed - Killing as fallback
+2024-07-07 13:04:00 - Finished tormenta.exe
+2024-07-07 13:04:01 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-07 13:04:01 - Started 58624
+2024-07-07 13:04:42 - Stopping tormenta.exe
+2024-07-07 13:04:42 - ProcessKill 58624
+2024-07-07 13:04:43 - Found child process: 48200 Name: conhost.exe
+2024-07-07 13:04:43 - Found child process: 54976 Name: node.exe
+2024-07-07 13:04:43 - Stopping process 48200
+2024-07-07 13:04:43 - Send SIGINT 48200
+2024-07-07 13:04:43 - SIGINT to 48200 failed - Killing as fallback
+2024-07-07 13:04:43 - Stopping process 54976
+2024-07-07 13:04:43 - Send SIGINT 54976
+2024-07-07 13:04:43 - SIGINT to 54976 failed - Killing as fallback
+2024-07-07 13:04:43 - Stopping process 58624
+2024-07-07 13:04:43 - Send SIGINT 58624
+2024-07-07 13:04:43 - SIGINT to 58624 failed - Killing as fallback
+2024-07-07 13:04:43 - Finished tormenta.exe
+2024-07-07 13:04:44 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-07 13:04:44 - Started 77064
+2024-07-07 13:12:16 - Stopping tormenta.exe
+2024-07-07 13:12:16 - ProcessKill 77064
+2024-07-07 13:12:16 - Found child process: 66692 Name: conhost.exe
+2024-07-07 13:12:16 - Found child process: 11816 Name: node.exe
+2024-07-07 13:12:17 - Stopping process 66692
+2024-07-07 13:12:17 - Send SIGINT 66692
+2024-07-07 13:12:17 - SIGINT to 66692 failed - Killing as fallback
+2024-07-07 13:12:17 - Stopping process 11816
+2024-07-07 13:12:17 - Send SIGINT 11816
+2024-07-07 13:12:17 - SIGINT to 11816 failed - Killing as fallback
+2024-07-07 13:12:17 - Stopping process 77064
+2024-07-07 13:12:17 - Send SIGINT 77064
+2024-07-07 13:12:17 - SIGINT to 77064 failed - Killing as fallback
+2024-07-07 13:12:17 - Finished tormenta.exe
+2024-07-07 13:12:18 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-07 13:12:18 - Started 34792
+2024-07-07 14:15:53 - Stopping tormenta.exe
+2024-07-07 14:15:53 - ProcessKill 34792
+2024-07-07 14:15:53 - Found child process: 13832 Name: conhost.exe
+2024-07-07 14:15:53 - Found child process: 30980 Name: node.exe
+2024-07-07 14:15:53 - Stopping process 13832
+2024-07-07 14:15:53 - Send SIGINT 13832
+2024-07-07 14:15:53 - SIGINT to 13832 failed - Killing as fallback
+2024-07-07 14:15:53 - Stopping process 30980
+2024-07-07 14:15:53 - Send SIGINT 30980
+2024-07-07 14:15:53 - SIGINT to 30980 failed - Killing as fallback
+2024-07-07 14:15:53 - Stopping process 34792
+2024-07-07 14:15:53 - Send SIGINT 34792
+2024-07-07 14:15:53 - SIGINT to 34792 failed - Killing as fallback
+2024-07-07 14:15:53 - Finished tormenta.exe
+2024-07-07 14:15:54 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-07 14:15:54 - Started 9528
+2024-07-07 14:15:58 - Stopping tormenta.exe
+2024-07-07 14:15:58 - ProcessKill 9528
+2024-07-07 14:15:58 - Found child process: 67920 Name: conhost.exe
+2024-07-07 14:15:58 - Found child process: 72348 Name: node.exe
+2024-07-07 14:15:58 - Stopping process 67920
+2024-07-07 14:15:58 - Send SIGINT 67920
+2024-07-07 14:15:58 - SIGINT to 67920 failed - Killing as fallback
+2024-07-07 14:15:58 - Stopping process 72348
+2024-07-07 14:15:58 - Send SIGINT 72348
+2024-07-07 14:15:58 - SIGINT to 72348 failed - Killing as fallback
+2024-07-07 14:15:58 - Stopping process 9528
+2024-07-07 14:15:58 - Send SIGINT 9528
+2024-07-07 14:15:58 - SIGINT to 9528 failed - Killing as fallback
+2024-07-07 14:15:58 - Finished tormenta.exe
+2024-07-07 14:15:59 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-07 14:15:59 - Started 47092
+2024-07-07 14:17:48 - Stopping tormenta.exe
+2024-07-07 14:17:48 - ProcessKill 47092
+2024-07-07 14:17:48 - Found child process: 26664 Name: conhost.exe
+2024-07-07 14:17:48 - Found child process: 77896 Name: node.exe
+2024-07-07 14:17:48 - Stopping process 26664
+2024-07-07 14:17:48 - Send SIGINT 26664
+2024-07-07 14:17:48 - SIGINT to 26664 failed - Killing as fallback
+2024-07-07 14:17:48 - Stopping process 77896
+2024-07-07 14:17:48 - Send SIGINT 77896
+2024-07-07 14:17:48 - SIGINT to 77896 failed - Killing as fallback
+2024-07-07 14:17:48 - Stopping process 47092
+2024-07-07 14:17:48 - Send SIGINT 47092
+2024-07-07 14:17:48 - SIGINT to 47092 failed - Killing as fallback
+2024-07-07 14:17:48 - Finished tormenta.exe
+2024-07-07 14:17:56 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-07 14:17:56 - Started 96152
+2024-07-07 14:18:55 - Stopping tormenta.exe
+2024-07-07 14:18:55 - ProcessKill 96152
+2024-07-07 14:18:55 - Found child process: 83052 Name: conhost.exe
+2024-07-07 14:18:55 - Found child process: 83552 Name: node.exe
+2024-07-07 14:18:56 - Stopping process 83052
+2024-07-07 14:18:56 - Send SIGINT 83052
+2024-07-07 14:18:56 - SIGINT to 83052 failed - Killing as fallback
+2024-07-07 14:18:56 - Stopping process 83552
+2024-07-07 14:18:56 - Send SIGINT 83552
+2024-07-07 14:18:56 - SIGINT to 83552 failed - Killing as fallback
+2024-07-07 14:18:56 - Stopping process 96152
+2024-07-07 14:18:56 - Send SIGINT 96152
+2024-07-07 14:18:56 - SIGINT to 96152 failed - Killing as fallback
+2024-07-07 14:18:56 - Finished tormenta.exe
+2024-07-07 14:18:57 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-07 14:18:57 - Started 46452
+2024-07-07 14:21:12 - Stopping tormenta.exe
+2024-07-07 14:21:12 - ProcessKill 46452
+2024-07-07 14:21:12 - Found child process: 69100 Name: conhost.exe
+2024-07-07 14:21:12 - Found child process: 48812 Name: node.exe
+2024-07-07 14:21:12 - Stopping process 69100
+2024-07-07 14:21:12 - Send SIGINT 69100
+2024-07-07 14:21:12 - SIGINT to 69100 failed - Killing as fallback
+2024-07-07 14:21:13 - Stopping process 48812
+2024-07-07 14:21:13 - Send SIGINT 48812
+2024-07-07 14:21:13 - SIGINT to 48812 failed - Killing as fallback
+2024-07-07 14:21:13 - Stopping process 46452
+2024-07-07 14:21:13 - Send SIGINT 46452
+2024-07-07 14:21:13 - SIGINT to 46452 failed - Killing as fallback
+2024-07-07 14:21:13 - Finished tormenta.exe
+2024-07-07 14:21:13 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-07 14:21:13 - Started 81484
+2024-07-07 14:21:24 - Stopping tormenta.exe
+2024-07-07 14:21:24 - ProcessKill 81484
+2024-07-07 14:21:24 - Found child process: 54756 Name: conhost.exe
+2024-07-07 14:21:24 - Found child process: 33340 Name: node.exe
+2024-07-07 14:21:24 - Stopping process 54756
+2024-07-07 14:21:24 - Send SIGINT 54756
+2024-07-07 14:21:24 - SIGINT to 54756 failed - Killing as fallback
+2024-07-07 14:21:24 - Stopping process 33340
+2024-07-07 14:21:25 - Send SIGINT 33340
+2024-07-07 14:21:25 - SIGINT to 33340 failed - Killing as fallback
+2024-07-07 14:21:25 - Stopping process 81484
+2024-07-07 14:21:25 - Send SIGINT 81484
+2024-07-07 14:21:25 - SIGINT to 81484 failed - Killing as fallback
+2024-07-07 14:21:25 - Finished tormenta.exe
+2024-07-07 14:21:25 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-07 14:21:25 - Started 20248
+2024-07-10 08:44:15 - Stopping tormenta.exe
+2024-07-10 08:44:15 - ProcessKill 20248
+2024-07-10 08:44:15 - Found child process: 58092 Name: conhost.exe
+2024-07-10 08:44:15 - Found child process: 50592 Name: node.exe
+2024-07-10 08:44:15 - Stopping process 58092
+2024-07-10 08:44:15 - Send SIGINT 58092
+2024-07-10 08:44:15 - SIGINT to 58092 failed - Killing as fallback
+2024-07-10 08:44:15 - Stopping process 50592
+2024-07-10 08:44:15 - Send SIGINT 50592
+2024-07-10 08:44:15 - SIGINT to 50592 failed - Killing as fallback
+2024-07-10 08:44:15 - Stopping process 20248
+2024-07-10 08:44:15 - Send SIGINT 20248
+2024-07-10 08:44:15 - SIGINT to 20248 failed - Killing as fallback
+2024-07-10 08:44:15 - Finished tormenta.exe
+2024-07-10 08:44:16 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-10 08:44:16 - Started 19196
+2024-07-10 08:49:46 - Stopping tormenta.exe
+2024-07-10 08:49:46 - ProcessKill 19196
+2024-07-10 08:49:47 - Found child process: 12372 Name: conhost.exe
+2024-07-10 08:49:47 - Found child process: 93592 Name: node.exe
+2024-07-10 08:49:47 - Stopping process 12372
+2024-07-10 08:49:47 - Send SIGINT 12372
+2024-07-10 08:49:47 - SIGINT to 12372 failed - Killing as fallback
+2024-07-10 08:49:47 - Stopping process 93592
+2024-07-10 08:49:47 - Send SIGINT 93592
+2024-07-10 08:49:47 - SIGINT to 93592 failed - Killing as fallback
+2024-07-10 08:49:47 - Stopping process 19196
+2024-07-10 08:49:47 - Send SIGINT 19196
+2024-07-10 08:49:47 - SIGINT to 19196 failed - Killing as fallback
+2024-07-10 08:49:47 - Finished tormenta.exe
+2024-07-10 08:49:48 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-10 08:49:48 - Started 26864
+2024-07-10 08:55:48 - Stopping tormenta.exe
+2024-07-10 08:55:48 - ProcessKill 26864
+2024-07-10 08:55:48 - Found child process: 23764 Name: conhost.exe
+2024-07-10 08:55:48 - Found child process: 86080 Name: node.exe
+2024-07-10 08:55:48 - Stopping process 23764
+2024-07-10 08:55:48 - Send SIGINT 23764
+2024-07-10 08:55:48 - SIGINT to 23764 failed - Killing as fallback
+2024-07-10 08:55:48 - Stopping process 86080
+2024-07-10 08:55:48 - Send SIGINT 86080
+2024-07-10 08:55:48 - SIGINT to 86080 failed - Killing as fallback
+2024-07-10 08:55:48 - Stopping process 26864
+2024-07-10 08:55:48 - Send SIGINT 26864
+2024-07-10 08:55:48 - SIGINT to 26864 failed - Killing as fallback
+2024-07-10 08:55:48 - Finished tormenta.exe
+2024-07-10 08:55:49 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-10 08:55:49 - Started 89212
+2024-07-10 09:38:33 - Stopping tormenta.exe
+2024-07-10 09:38:33 - ProcessKill 89212
+2024-07-10 09:38:33 - Found child process: 25916 Name: conhost.exe
+2024-07-10 09:38:33 - Found child process: 83868 Name: node.exe
+2024-07-10 09:38:33 - Stopping process 25916
+2024-07-10 09:38:33 - Send SIGINT 25916
+2024-07-10 09:38:33 - SIGINT to 25916 failed - Killing as fallback
+2024-07-10 09:38:34 - Stopping process 83868
+2024-07-10 09:38:34 - Send SIGINT 83868
+2024-07-10 09:38:34 - SIGINT to 83868 failed - Killing as fallback
+2024-07-10 09:38:34 - Stopping process 89212
+2024-07-10 09:38:34 - Send SIGINT 89212
+2024-07-10 09:38:34 - SIGINT to 89212 failed - Killing as fallback
+2024-07-10 09:38:34 - Finished tormenta.exe
+2024-07-10 09:38:35 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-10 09:38:35 - Started 19328
+2024-07-10 09:39:24 - Stopping tormenta.exe
+2024-07-10 09:39:24 - ProcessKill 19328
+2024-07-10 09:39:24 - Found child process: 49836 Name: conhost.exe
+2024-07-10 09:39:24 - Found child process: 90984 Name: node.exe
+2024-07-10 09:39:24 - Stopping process 49836
+2024-07-10 09:39:24 - Send SIGINT 49836
+2024-07-10 09:39:24 - SIGINT to 49836 failed - Killing as fallback
+2024-07-10 09:39:24 - Stopping process 90984
+2024-07-10 09:39:24 - Send SIGINT 90984
+2024-07-10 09:39:24 - SIGINT to 90984 failed - Killing as fallback
+2024-07-10 09:39:24 - Stopping process 19328
+2024-07-10 09:39:24 - Send SIGINT 19328
+2024-07-10 09:39:24 - SIGINT to 19328 failed - Killing as fallback
+2024-07-10 09:39:24 - Finished tormenta.exe
+2024-07-10 09:39:25 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-10 09:39:25 - Started 61872
+2024-07-10 23:38:25 - Stopping tormenta.exe
+2024-07-10 23:38:25 - ProcessKill 61872
+2024-07-10 23:38:25 - Shutdown exception
+Message:O sistema está sendo desligado.
+
+Stacktrace:   em System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   em System.Management.ManagementScope.InitializeGuts(Object o)
+   em System.Management.ManagementScope.Initialize()
+   em System.Management.ManagementObjectSearcher.Initialize()
+   em System.Management.ManagementObjectSearcher.Get()
+   em winsw.WrapperService.GetChildPids(Int32 pid)
+   em winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   em winsw.WrapperService.StopIt()
+   em winsw.WrapperService.OnShutdown()
+2024-07-10 23:43:56 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-10 23:43:56 - Started 11976
+2024-07-12 07:57:51 - Stopping tormenta.exe
+2024-07-12 07:57:51 - ProcessKill 11976
+2024-07-12 07:57:51 - Found child process: 3380 Name: conhost.exe
+2024-07-12 07:57:51 - Found child process: 8140 Name: node.exe
+2024-07-12 07:57:51 - Stopping process 3380
+2024-07-12 07:57:51 - Send SIGINT 3380
+2024-07-12 07:57:51 - SIGINT to 3380 failed - Killing as fallback
+2024-07-12 07:57:51 - Stopping process 8140
+2024-07-12 07:57:51 - Send SIGINT 8140
+2024-07-12 07:57:51 - SIGINT to 8140 failed - Killing as fallback
+2024-07-12 07:57:51 - Stopping process 11976
+2024-07-12 07:57:51 - Send SIGINT 11976
+2024-07-12 07:57:51 - SIGINT to 11976 failed - Killing as fallback
+2024-07-12 07:57:52 - Finished tormenta.exe
+2024-07-12 07:57:53 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 07:57:53 - Started 6844
+2024-07-12 08:08:39 - Stopping tormenta.exe
+2024-07-12 08:08:39 - ProcessKill 6844
+2024-07-12 08:08:39 - Found child process: 17988 Name: conhost.exe
+2024-07-12 08:08:39 - Found child process: 21364 Name: node.exe
+2024-07-12 08:08:39 - Stopping process 17988
+2024-07-12 08:08:39 - Send SIGINT 17988
+2024-07-12 08:08:39 - SIGINT to 17988 failed - Killing as fallback
+2024-07-12 08:08:39 - Stopping process 21364
+2024-07-12 08:08:39 - Send SIGINT 21364
+2024-07-12 08:08:39 - SIGINT to 21364 failed - Killing as fallback
+2024-07-12 08:08:39 - Stopping process 6844
+2024-07-12 08:08:39 - Send SIGINT 6844
+2024-07-12 08:08:39 - SIGINT to 6844 failed - Killing as fallback
+2024-07-12 08:08:39 - Finished tormenta.exe
+2024-07-12 08:08:40 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:08:40 - Started 15192
+2024-07-12 08:08:59 - Stopping tormenta.exe
+2024-07-12 08:08:59 - ProcessKill 15192
+2024-07-12 08:09:00 - Found child process: 19500 Name: conhost.exe
+2024-07-12 08:09:00 - Found child process: 2328 Name: node.exe
+2024-07-12 08:09:00 - Stopping process 19500
+2024-07-12 08:09:00 - Send SIGINT 19500
+2024-07-12 08:09:00 - SIGINT to 19500 failed - Killing as fallback
+2024-07-12 08:09:00 - Stopping process 2328
+2024-07-12 08:09:00 - Send SIGINT 2328
+2024-07-12 08:09:00 - SIGINT to 2328 failed - Killing as fallback
+2024-07-12 08:09:00 - Stopping process 15192
+2024-07-12 08:09:00 - Send SIGINT 15192
+2024-07-12 08:09:00 - SIGINT to 15192 failed - Killing as fallback
+2024-07-12 08:09:00 - Finished tormenta.exe
+2024-07-12 08:10:50 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:10:50 - Started 23232
+2024-07-12 08:13:18 - Stopping tormenta.exe
+2024-07-12 08:13:18 - ProcessKill 23232
+2024-07-12 08:13:18 - Found child process: 10780 Name: conhost.exe
+2024-07-12 08:13:18 - Found child process: 11508 Name: node.exe
+2024-07-12 08:13:18 - Stopping process 10780
+2024-07-12 08:13:18 - Send SIGINT 10780
+2024-07-12 08:13:18 - SIGINT to 10780 failed - Killing as fallback
+2024-07-12 08:13:18 - Stopping process 11508
+2024-07-12 08:13:18 - Send SIGINT 11508
+2024-07-12 08:13:18 - SIGINT to 11508 failed - Killing as fallback
+2024-07-12 08:13:18 - Stopping process 23232
+2024-07-12 08:13:18 - Send SIGINT 23232
+2024-07-12 08:13:18 - SIGINT to 23232 failed - Killing as fallback
+2024-07-12 08:13:18 - Finished tormenta.exe
+2024-07-12 08:13:19 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:13:19 - Started 14508
+2024-07-12 08:14:26 - Stopping tormenta.exe
+2024-07-12 08:14:26 - ProcessKill 14508
+2024-07-12 08:14:26 - Found child process: 23824 Name: conhost.exe
+2024-07-12 08:14:26 - Found child process: 17416 Name: node.exe
+2024-07-12 08:14:26 - Stopping process 23824
+2024-07-12 08:14:26 - Send SIGINT 23824
+2024-07-12 08:14:26 - SIGINT to 23824 failed - Killing as fallback
+2024-07-12 08:14:26 - Stopping process 17416
+2024-07-12 08:14:26 - Send SIGINT 17416
+2024-07-12 08:14:26 - SIGINT to 17416 failed - Killing as fallback
+2024-07-12 08:14:26 - Stopping process 14508
+2024-07-12 08:14:26 - Send SIGINT 14508
+2024-07-12 08:14:26 - SIGINT to 14508 failed - Killing as fallback
+2024-07-12 08:14:26 - Finished tormenta.exe
+2024-07-12 08:14:27 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:14:27 - Started 17984
+2024-07-12 08:15:09 - Stopping tormenta.exe
+2024-07-12 08:15:09 - ProcessKill 17984
+2024-07-12 08:15:09 - Found child process: 23916 Name: conhost.exe
+2024-07-12 08:15:09 - Found child process: 18868 Name: node.exe
+2024-07-12 08:15:09 - Stopping process 23916
+2024-07-12 08:15:09 - Send SIGINT 23916
+2024-07-12 08:15:09 - SIGINT to 23916 failed - Killing as fallback
+2024-07-12 08:15:09 - Stopping process 18868
+2024-07-12 08:15:09 - Send SIGINT 18868
+2024-07-12 08:15:09 - SIGINT to 18868 failed - Killing as fallback
+2024-07-12 08:15:09 - Stopping process 17984
+2024-07-12 08:15:09 - Send SIGINT 17984
+2024-07-12 08:15:09 - SIGINT to 17984 failed - Killing as fallback
+2024-07-12 08:15:09 - Finished tormenta.exe
+2024-07-12 08:15:10 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:15:10 - Started 24072
+2024-07-12 08:15:40 - Stopping tormenta.exe
+2024-07-12 08:15:40 - ProcessKill 24072
+2024-07-12 08:15:41 - Found child process: 22648 Name: conhost.exe
+2024-07-12 08:15:41 - Found child process: 14908 Name: node.exe
+2024-07-12 08:15:41 - Stopping process 22648
+2024-07-12 08:15:41 - Send SIGINT 22648
+2024-07-12 08:15:41 - SIGINT to 22648 failed - Killing as fallback
+2024-07-12 08:15:41 - Stopping process 14908
+2024-07-12 08:15:41 - Send SIGINT 14908
+2024-07-12 08:15:41 - SIGINT to 14908 failed - Killing as fallback
+2024-07-12 08:15:41 - Stopping process 24072
+2024-07-12 08:15:41 - Send SIGINT 24072
+2024-07-12 08:15:41 - SIGINT to 24072 failed - Killing as fallback
+2024-07-12 08:15:41 - Finished tormenta.exe
+2024-07-12 08:15:42 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:15:42 - Started 19140
+2024-07-12 08:16:00 - Stopping tormenta.exe
+2024-07-12 08:16:00 - ProcessKill 19140
+2024-07-12 08:16:01 - Found child process: 2284 Name: conhost.exe
+2024-07-12 08:16:01 - Found child process: 22284 Name: node.exe
+2024-07-12 08:16:01 - Stopping process 2284
+2024-07-12 08:16:01 - Send SIGINT 2284
+2024-07-12 08:16:01 - SIGINT to 2284 failed - Killing as fallback
+2024-07-12 08:16:01 - Stopping process 22284
+2024-07-12 08:16:01 - Send SIGINT 22284
+2024-07-12 08:16:01 - SIGINT to 22284 failed - Killing as fallback
+2024-07-12 08:16:01 - Stopping process 19140
+2024-07-12 08:16:01 - Send SIGINT 19140
+2024-07-12 08:16:01 - SIGINT to 19140 failed - Killing as fallback
+2024-07-12 08:16:01 - Finished tormenta.exe
+2024-07-12 08:17:29 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:17:29 - Started 18468
+2024-07-12 08:18:58 - Stopping tormenta.exe
+2024-07-12 08:18:58 - ProcessKill 18468
+2024-07-12 08:18:58 - Found child process: 15216 Name: conhost.exe
+2024-07-12 08:18:58 - Found child process: 6728 Name: node.exe
+2024-07-12 08:18:58 - Stopping process 15216
+2024-07-12 08:18:58 - Send SIGINT 15216
+2024-07-12 08:18:58 - SIGINT to 15216 failed - Killing as fallback
+2024-07-12 08:18:59 - Stopping process 6728
+2024-07-12 08:18:59 - Send SIGINT 6728
+2024-07-12 08:18:59 - SIGINT to 6728 failed - Killing as fallback
+2024-07-12 08:18:59 - Stopping process 18468
+2024-07-12 08:18:59 - Send SIGINT 18468
+2024-07-12 08:18:59 - SIGINT to 18468 failed - Killing as fallback
+2024-07-12 08:18:59 - Finished tormenta.exe
+2024-07-12 08:19:03 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:19:03 - Started 18512
+2024-07-12 08:27:24 - Stopping tormenta.exe
+2024-07-12 08:27:24 - ProcessKill 18512
+2024-07-12 08:27:24 - Found child process: 23644 Name: conhost.exe
+2024-07-12 08:27:24 - Found child process: 20636 Name: node.exe
+2024-07-12 08:27:24 - Stopping process 23644
+2024-07-12 08:27:24 - Send SIGINT 23644
+2024-07-12 08:27:24 - SIGINT to 23644 failed - Killing as fallback
+2024-07-12 08:27:24 - Stopping process 20636
+2024-07-12 08:27:24 - Send SIGINT 20636
+2024-07-12 08:27:24 - SIGINT to 20636 failed - Killing as fallback
+2024-07-12 08:27:24 - Stopping process 18512
+2024-07-12 08:27:24 - Send SIGINT 18512
+2024-07-12 08:27:24 - SIGINT to 18512 failed - Killing as fallback
+2024-07-12 08:27:24 - Finished tormenta.exe
+2024-07-12 08:27:25 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:27:25 - Started 8504
+2024-07-12 08:28:54 - Stopping tormenta.exe
+2024-07-12 08:28:54 - ProcessKill 8504
+2024-07-12 08:28:54 - Found child process: 12836 Name: conhost.exe
+2024-07-12 08:28:54 - Found child process: 18652 Name: node.exe
+2024-07-12 08:28:54 - Stopping process 12836
+2024-07-12 08:28:54 - Send SIGINT 12836
+2024-07-12 08:28:54 - SIGINT to 12836 failed - Killing as fallback
+2024-07-12 08:28:55 - Stopping process 18652
+2024-07-12 08:28:55 - Send SIGINT 18652
+2024-07-12 08:28:55 - SIGINT to 18652 failed - Killing as fallback
+2024-07-12 08:28:55 - Stopping process 8504
+2024-07-12 08:28:55 - Send SIGINT 8504
+2024-07-12 08:28:55 - SIGINT to 8504 failed - Killing as fallback
+2024-07-12 08:28:55 - Finished tormenta.exe
+2024-07-12 08:28:56 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:28:56 - Started 11100
+2024-07-12 08:29:27 - Stopping tormenta.exe
+2024-07-12 08:29:27 - ProcessKill 11100
+2024-07-12 08:29:27 - Found child process: 19232 Name: conhost.exe
+2024-07-12 08:29:27 - Found child process: 20060 Name: node.exe
+2024-07-12 08:29:27 - Stopping process 19232
+2024-07-12 08:29:27 - Send SIGINT 19232
+2024-07-12 08:29:27 - SIGINT to 19232 failed - Killing as fallback
+2024-07-12 08:29:27 - Stopping process 20060
+2024-07-12 08:29:27 - Send SIGINT 20060
+2024-07-12 08:29:27 - SIGINT to 20060 failed - Killing as fallback
+2024-07-12 08:29:27 - Stopping process 11100
+2024-07-12 08:29:27 - Send SIGINT 11100
+2024-07-12 08:29:27 - SIGINT to 11100 failed - Killing as fallback
+2024-07-12 08:29:27 - Finished tormenta.exe
+2024-07-12 08:29:28 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:29:28 - Started 2380
+2024-07-12 08:30:21 - Stopping tormenta.exe
+2024-07-12 08:30:21 - ProcessKill 2380
+2024-07-12 08:30:22 - Found child process: 6456 Name: conhost.exe
+2024-07-12 08:30:22 - Found child process: 5112 Name: node.exe
+2024-07-12 08:30:22 - Stopping process 6456
+2024-07-12 08:30:22 - Send SIGINT 6456
+2024-07-12 08:30:22 - SIGINT to 6456 failed - Killing as fallback
+2024-07-12 08:30:22 - Stopping process 5112
+2024-07-12 08:30:22 - Send SIGINT 5112
+2024-07-12 08:30:22 - SIGINT to 5112 failed - Killing as fallback
+2024-07-12 08:30:22 - Stopping process 2380
+2024-07-12 08:30:22 - Send SIGINT 2380
+2024-07-12 08:30:22 - SIGINT to 2380 failed - Killing as fallback
+2024-07-12 08:30:22 - Finished tormenta.exe
+2024-07-12 08:36:25 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:36:25 - Started 21948
+2024-07-12 08:37:34 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:37:34 - Started 21116
+2024-07-12 08:43:55 - Stopping tormenta.exe
+2024-07-12 08:43:55 - ProcessKill 21116
+2024-07-12 08:43:56 - Found child process: 20452 Name: conhost.exe
+2024-07-12 08:43:56 - Found child process: 18308 Name: node.exe
+2024-07-12 08:43:56 - Stopping process 20452
+2024-07-12 08:43:56 - Send SIGINT 20452
+2024-07-12 08:43:56 - SIGINT to 20452 failed - Killing as fallback
+2024-07-12 08:43:56 - Stopping process 18308
+2024-07-12 08:43:56 - Send SIGINT 18308
+2024-07-12 08:43:56 - SIGINT to 18308 failed - Killing as fallback
+2024-07-12 08:43:56 - Stopping process 21116
+2024-07-12 08:43:56 - Send SIGINT 21116
+2024-07-12 08:43:56 - SIGINT to 21116 failed - Killing as fallback
+2024-07-12 08:43:56 - Finished tormenta.exe
+2024-07-12 08:43:57 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:43:57 - Started 13808
+2024-07-12 08:44:07 - Stopping tormenta.exe
+2024-07-12 08:44:07 - ProcessKill 13808
+2024-07-12 08:44:08 - Found child process: 13232 Name: conhost.exe
+2024-07-12 08:44:08 - Found child process: 23168 Name: node.exe
+2024-07-12 08:44:08 - Stopping process 13232
+2024-07-12 08:44:08 - Send SIGINT 13232
+2024-07-12 08:44:08 - SIGINT to 13232 failed - Killing as fallback
+2024-07-12 08:44:08 - Stopping process 23168
+2024-07-12 08:44:08 - Send SIGINT 23168
+2024-07-12 08:44:08 - SIGINT to 23168 failed - Killing as fallback
+2024-07-12 08:44:08 - Stopping process 13808
+2024-07-12 08:44:08 - Send SIGINT 13808
+2024-07-12 08:44:08 - SIGINT to 13808 failed - Killing as fallback
+2024-07-12 08:44:08 - Finished tormenta.exe
+2024-07-12 08:44:09 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:44:09 - Started 13024
+2024-07-12 08:46:07 - Stopping tormenta.exe
+2024-07-12 08:46:07 - ProcessKill 13024
+2024-07-12 08:46:07 - Found child process: 12900 Name: conhost.exe
+2024-07-12 08:46:07 - Found child process: 2224 Name: node.exe
+2024-07-12 08:46:08 - Stopping process 12900
+2024-07-12 08:46:08 - Send SIGINT 12900
+2024-07-12 08:46:08 - SIGINT to 12900 failed - Killing as fallback
+2024-07-12 08:46:08 - Stopping process 2224
+2024-07-12 08:46:08 - Send SIGINT 2224
+2024-07-12 08:46:08 - SIGINT to 2224 failed - Killing as fallback
+2024-07-12 08:46:08 - Stopping process 13024
+2024-07-12 08:46:08 - Send SIGINT 13024
+2024-07-12 08:46:08 - SIGINT to 13024 failed - Killing as fallback
+2024-07-12 08:46:08 - Finished tormenta.exe
+2024-07-12 08:46:09 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:46:09 - Started 16568
+2024-07-12 08:46:44 - Stopping tormenta.exe
+2024-07-12 08:46:44 - ProcessKill 16568
+2024-07-12 08:46:44 - Found child process: 23972 Name: conhost.exe
+2024-07-12 08:46:44 - Found child process: 8468 Name: node.exe
+2024-07-12 08:46:44 - Stopping process 23972
+2024-07-12 08:46:44 - Send SIGINT 23972
+2024-07-12 08:46:44 - SIGINT to 23972 failed - Killing as fallback
+2024-07-12 08:46:44 - Stopping process 8468
+2024-07-12 08:46:44 - Send SIGINT 8468
+2024-07-12 08:46:44 - SIGINT to 8468 failed - Killing as fallback
+2024-07-12 08:46:44 - Stopping process 16568
+2024-07-12 08:46:44 - Send SIGINT 16568
+2024-07-12 08:46:44 - SIGINT to 16568 failed - Killing as fallback
+2024-07-12 08:46:44 - Finished tormenta.exe
+2024-07-12 08:46:45 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:46:45 - Started 19296
+2024-07-12 08:47:06 - Stopping tormenta.exe
+2024-07-12 08:47:06 - ProcessKill 19296
+2024-07-12 08:47:07 - Found child process: 13320 Name: conhost.exe
+2024-07-12 08:47:07 - Found child process: 19492 Name: node.exe
+2024-07-12 08:47:07 - Stopping process 13320
+2024-07-12 08:47:07 - Send SIGINT 13320
+2024-07-12 08:47:07 - SIGINT to 13320 failed - Killing as fallback
+2024-07-12 08:47:07 - Stopping process 19492
+2024-07-12 08:47:07 - Send SIGINT 19492
+2024-07-12 08:47:07 - SIGINT to 19492 failed - Killing as fallback
+2024-07-12 08:47:07 - Stopping process 19296
+2024-07-12 08:47:07 - Send SIGINT 19296
+2024-07-12 08:47:07 - SIGINT to 19296 failed - Killing as fallback
+2024-07-12 08:47:07 - Finished tormenta.exe
+2024-07-12 08:47:08 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:47:08 - Started 24268
+2024-07-12 08:48:45 - Stopping tormenta.exe
+2024-07-12 08:48:45 - ProcessKill 24268
+2024-07-12 08:48:45 - Found child process: 23232 Name: conhost.exe
+2024-07-12 08:48:45 - Found child process: 15476 Name: node.exe
+2024-07-12 08:48:45 - Stopping process 23232
+2024-07-12 08:48:45 - Send SIGINT 23232
+2024-07-12 08:48:45 - SIGINT to 23232 failed - Killing as fallback
+2024-07-12 08:48:46 - Stopping process 15476
+2024-07-12 08:48:46 - Send SIGINT 15476
+2024-07-12 08:48:46 - SIGINT to 15476 failed - Killing as fallback
+2024-07-12 08:48:46 - Stopping process 24268
+2024-07-12 08:48:46 - Send SIGINT 24268
+2024-07-12 08:48:46 - SIGINT to 24268 failed - Killing as fallback
+2024-07-12 08:48:46 - Finished tormenta.exe
+2024-07-12 08:48:46 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 08:48:46 - Started 288
+2024-07-12 10:11:30 - Stopping tormenta.exe
+2024-07-12 10:11:30 - ProcessKill 288
+2024-07-12 10:11:30 - Found child process: 2224 Name: conhost.exe
+2024-07-12 10:11:30 - Found child process: 20636 Name: node.exe
+2024-07-12 10:11:30 - Stopping process 2224
+2024-07-12 10:11:30 - Send SIGINT 2224
+2024-07-12 10:11:30 - SIGINT to 2224 failed - Killing as fallback
+2024-07-12 10:11:31 - Stopping process 20636
+2024-07-12 10:11:31 - Send SIGINT 20636
+2024-07-12 10:11:31 - SIGINT to 20636 failed - Killing as fallback
+2024-07-12 10:11:31 - Stopping process 288
+2024-07-12 10:11:31 - Send SIGINT 288
+2024-07-12 10:11:31 - SIGINT to 288 failed - Killing as fallback
+2024-07-12 10:11:31 - Finished tormenta.exe
+2024-07-12 10:11:32 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 10:11:32 - Started 23592
+2024-07-12 14:40:23 - Stopping tormenta.exe
+2024-07-12 14:40:23 - ProcessKill 23592
+2024-07-12 14:40:23 - Found child process: 13996 Name: conhost.exe
+2024-07-12 14:40:23 - Found child process: 16020 Name: node.exe
+2024-07-12 14:40:23 - Stopping process 13996
+2024-07-12 14:40:23 - Send SIGINT 13996
+2024-07-12 14:40:23 - SIGINT to 13996 failed - Killing as fallback
+2024-07-12 14:40:24 - Stopping process 16020
+2024-07-12 14:40:24 - Send SIGINT 16020
+2024-07-12 14:40:24 - SIGINT to 16020 failed - Killing as fallback
+2024-07-12 14:40:24 - Stopping process 23592
+2024-07-12 14:40:24 - Send SIGINT 23592
+2024-07-12 14:40:24 - SIGINT to 23592 failed - Killing as fallback
+2024-07-12 14:40:24 - Finished tormenta.exe
+2024-07-12 14:40:24 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 14:40:24 - Started 20976
+2024-07-12 14:42:13 - Stopping tormenta.exe
+2024-07-12 14:42:13 - ProcessKill 20976
+2024-07-12 14:42:13 - Found child process: 20932 Name: conhost.exe
+2024-07-12 14:42:13 - Found child process: 3588 Name: node.exe
+2024-07-12 14:42:13 - Stopping process 20932
+2024-07-12 14:42:13 - Send SIGINT 20932
+2024-07-12 14:42:13 - SIGINT to 20932 failed - Killing as fallback
+2024-07-12 14:42:13 - Stopping process 3588
+2024-07-12 14:42:13 - Send SIGINT 3588
+2024-07-12 14:42:14 - SIGINT to 3588 failed - Killing as fallback
+2024-07-12 14:42:14 - Stopping process 20976
+2024-07-12 14:42:14 - Send SIGINT 20976
+2024-07-12 14:42:14 - SIGINT to 20976 failed - Killing as fallback
+2024-07-12 14:42:14 - Finished tormenta.exe
+2024-07-12 14:42:14 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-12 14:42:14 - Started 4916
+2024-07-22 08:13:02 - Starting C:\Program Files\nodejs\node.exe  --harmony "D:\Projetos Pessoais\galeria-tormenta-react\node_modules\node-windows\lib\wrapper.js" --file "D:\Projetos Pessoais\galeria-tormenta-react\api" --scriptoptions= --log "Tormenta wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-07-22 08:13:02 - Started 12664

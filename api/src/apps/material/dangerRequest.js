@@ -3,7 +3,11 @@ const router = require('express').Router();
 router.get('/v1/danger/', async function (req, res, next) {
     try {
 
-        const rows = await req.db.Danger.findAll();
+        const rows = await req.db.Danger.findAll({
+            where: {
+                active: 1
+            }
+        });
 
         res.status(200).send({ success: true, data: rows });
     } catch (error) {

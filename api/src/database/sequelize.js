@@ -30,6 +30,8 @@ module.exports = (config, dbSync) => {
     db.Initiative = require('./models/initiative')(sequelize, Sequelize);
     db.Monster = require('./models/monster')(sequelize, Sequelize);
     db.Danger = require('./models/danger')(sequelize, Sequelize);
+    db.Aventura = require('./models/aventura')(sequelize, Sequelize);
+    db.Cena = require('./models/cena')(sequelize, Sequelize);
 
     if (dbSync)
         db.sequelize.sync();
@@ -37,6 +39,12 @@ module.exports = (config, dbSync) => {
     //     db.sequelize.sync({ force: true }).then(() => {
     //         console.log("Drop and re-sync db.");
     //     });
+
+    Object.values(db).forEach(model => {
+        if (model.associate) {
+            model.associate(db);
+        }
+    });
 
     return db;
 }

@@ -7,13 +7,7 @@ function Initiative(props) {
     const [itens, setItens] = useState([]);
     const [data, setData] = useState({});
     const [heros, setHeros] = useState([]);
-    const [hero, setHero] = useState({});
 
-    const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
-    ]
     const fechData = () => {
 
         axios.get(`${Utils.api()}initiative/`).then(res => {
@@ -22,20 +16,27 @@ function Initiative(props) {
             //toast.error("Ocorreu um erro ao buscar requisições: " + e.response.data.message);
         });
         axios.get(`${Utils.api()}hero_and_monster/`).then(res => {
-            let heros = res.data.data.heros.map((p) => { return { 'value': p.name, 'label': p.name } });
-            let monsters = res.data.data.monsters.map((p) => { return { 'value': p.name, 'label': p.name } });
-            setHeros(heros.concat(monsters));
+            let heros = res.data.data.heros.map((p) => { return p.name });
+            let monsters = res.data.data.monsters.map((p) => { return p.name });
+            setHeros([...new Set(heros.concat(monsters))]);
         }).catch((e) => {
             //toast.error("Ocorreu um erro ao buscar requisições: " + e.response.data.message);
         });
 
-        if (props.monster)
-            setHero(props.monster);
     };
 
     useEffect(fechData, [])
     const handleDelete = (id) => {
         axios.delete(`${Utils.api()}initiative/${id}`).then(res => {
+            fechData()
+            setData({});
+        }).catch((e) => {
+            //toast.error("Ocorreu um erro ao buscar requisições: " + e.response.data.message);
+        });
+    }
+
+    const handleClear = () => {
+        axios.delete(`${Utils.api()}initiative/`).then(res => {
             fechData()
             setData({});
         }).catch((e) => {
@@ -59,13 +60,6 @@ function Initiative(props) {
         setData({ ...data, [name]: value });
     };
 
-    const handleAddHero = (e) => {
-        debugger;
-        if (e) {
-            setData({ ...data, name: (e) ? e.value : '' });
-        }
-        setHero(e);
-    };
     return (
         <form onSubmit={handleSave}>
             <div className="box">
@@ -80,8 +74,8 @@ function Initiative(props) {
                                 </div>
                                 <select className="form-control form-control-sm" id="name" onChange={handleChange} value={data.name || ''} required >
                                     <option value=''>Nome</option>
-                                    {heros && heros.sort((a, b) => (a.value > b.value) ? 1 : -1).map((hero, key) => {
-                                        return <option key={key} value={hero.value}>{hero.label}</option>
+                                    {heros && heros.sort((a, b) => (a > b) ? 1 : -1).map((hero, key) => {
+                                        return <option key={key} value={hero}>{hero}</option>
                                     })}
                                 </select>
                             </div>
@@ -98,14 +92,18 @@ function Initiative(props) {
                         </div>
                     </div>
                     <div className="card-body table-responsive p-0">
-                        <table className="table table-head-fixed" style={{ overflow: 'auto', display: 'block' }}>
+                        <table className="table table-head-fixed">
                             <tbody>
                                 {itens && itens.sort((a, b) => { return b.value - a.value }).map((item, key) => {
                                     return <tr key={key}>
-                                        <td style={{ minWidth: '550px' }}>
-                                            <div className="float-right"><button className="btn btn-sm" type="button" onClick={() => handleDelete(item.id)}><i className="fa fa-trash" /></button></div>
-                                            <div><span className="badge badge-success">{item.value}</span> <a href="#">{item.name.toUpperCase()}</a></div>
-                                            <br></br>
+                                        <td>
+                                            <span className="badge badge-success">{item.value}</span>
+                                        </td>
+                                        <td>
+                                            <a href="#">{item.name.toUpperCase()}</a>
+                                        </td>
+                                        <td>
+                                            <button className="btn btn-sm" type="button" onClick={() => handleDelete(item.id)}><i className="fa fa-trash" /></button>
                                         </td>
                                     </tr>
                                 })}
@@ -113,9 +111,9 @@ function Initiative(props) {
                         </table>
                     </div>
                 </div>
-                {/* <div className="box">
-                    <button type="submit" className="btn btn-primary float-right btn-sm" >Adcionar</button>
-                </div> */}
+                {itens.length !== 0 && <div className="box" style={{ marginTop: '10px' }}>
+                    <button type="button" className="btn btn-danger float-right btn-sm" onClick={handleClear}><i className="fa fa-trash" /> Limpar</button>
+                </div>}
             </div>
         </form>
     )

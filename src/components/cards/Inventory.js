@@ -9,6 +9,7 @@ function Inventory(props) {
     const fechData = () => {
         axios.get(`${Utils.api()}item/`).then(res => {
             setItens(res.data.data);
+            props.onUpdate();
         }).catch((e) => {
             //toast.error("Ocorreu um erro ao buscar requisições: " + e.response.data.message);
         });
@@ -17,7 +18,7 @@ function Inventory(props) {
     useEffect(fechData, [])
     const handleDelete = (id) => {
         axios.delete(`${Utils.api()}item/${id}`).then(res => {
-            fechData()
+            fechData();
             setData({});
         }).catch((e) => {
             //toast.error("Ocorreu um erro ao buscar requisições: " + e.response.data.message);

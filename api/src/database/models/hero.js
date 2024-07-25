@@ -7,7 +7,14 @@ module.exports = (sequelize, Sequelize) => {
     desvantagens: { type: Sequelize.STRING(5000), allowNull: true },
     pericias: { type: Sequelize.STRING(5000), allowNull: true },
     armas: { type: Sequelize.STRING(5000), allowNull: true },
-    magias: { type: Sequelize.STRING(10000), allowNull: true }
+    magias: { type: Sequelize.STRING(10000), allowNull: true },
+    pvAtual: { type: Sequelize.INTEGER, allowNull: false },
+    pmAtual: { type: Sequelize.INTEGER, allowNull: false },
+    pmTotal: { type: Sequelize.INTEGER, allowNull: false },
+    pvTotal: { type: Sequelize.INTEGER, allowNull: false },
+    xpTotal: { type: Sequelize.INTEGER, allowNull: true },
+    xpGasto: { type: Sequelize.INTEGER, allowNull: true }
+
   }
   );
 

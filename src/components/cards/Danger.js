@@ -10,6 +10,14 @@ function Danger(props) {
         mode: '',
         danger: {}
     });
+    const [paggination, setPaggination] = useState({
+        pageSize: 10,
+        totalPages: 0,
+        selectedPage: 0,
+        initRow: 0,
+        endRow: 10
+    });
+
     const [danger, setDanger] = useState([]);
     const [data, setData] = useState({});
     const fechData = () => {
@@ -23,6 +31,38 @@ function Danger(props) {
     };
 
     useEffect(fechData, [])
+
+    const setPage = (page) => {
+        if (!page || page < 0)
+            page = 0;
+
+        if (page === paggination.totalPages) return;
+
+        let init = page * paggination.pageSize;
+        let end = init + paggination.pageSize;
+
+        setPaggination({
+            ...paggination,
+            totalPages: Math.ceil(danger.length / paggination.pageSize),
+            selectedPage: page,
+            initRow: init,
+            endRow: end
+        });
+    };
+
+    const renderPage = () => {
+        const pages = Math.ceil(danger.length / paggination.pageSize);
+
+        return (
+            <>
+                <button title='Início' type="button" className="btn btn-sm btn-default" onClick={() => setPage(0)}><i className="fa fa-chevron-left" /><i className="fa fa-chevron-left" /></button>
+                <button type="button" className="btn btn-sm btn-default" onClick={() => setPage(paggination.selectedPage - 1)}><i className="fa fa-chevron-left" /></button>
+                <div className="btn btn-sm btn-default ">{(paggination.selectedPage + 1) + '-' + pages + '/' + danger.length + ' '}</div>
+                <button type="button" className="btn btn-sm btn-default" onClick={() => setPage(paggination.selectedPage + 1)}><i className="fa fa-chevron-right" /></button>
+                <button title='Fim' type="button" className="btn btn-sm btn-default" onClick={() => setPage(pages - 1)}><i className="fa fa-chevron-right" /><i className="fa fa-chevron-right" /></button>
+            </>
+        )
+    };
 
     const handleDelete = (id) => {
         if (window.confirm("Deseja realmente descartar essa ameaça?") === false)
@@ -44,7 +84,7 @@ function Danger(props) {
     };
 
     const handleSave = (e) => {
-        e.preventDefault();     
+        e.preventDefault();
 
         if (data.id)
             axios.put(`${Utils.api()}danger/${data.id}`, { data }).then(res => {
@@ -259,38 +299,44 @@ function Danger(props) {
                 </Modal.Body>
             </Modal>
             <div className="box">
-              
-                    <div className="table-responsive p-0" style={{ minHeight: '270px' }}>
-                        <table className="table no-margin table-head-fixed">
-                            <thead>
-                                <tr>
-                                    <th>Nome</th>
-                                    <th>Sucessos</th>
-                                    <th>Dano</th>
-                                    <th></th>
+                <div className="float-left" style={{ marginBottom: '10px' }}>
+                    <button type="button" className="btn btn-primary" onClick={handleForm}><i className="fas fa-scroll"> </i> Novo</button>
+                </div>
+                <div className="float-right" style={{ marginTop: '10px' }}>
+                    {renderPage()}
+                </div>
+                <div className="table-responsive p-0" style={{ minHeight: '270px' }}>
+                    <table className="table no-margin table-head-fixed">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Sucessos</th>
+                                <th>Dano</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {danger && danger.sort((a, b) => (a.name > b.name) ? 1 : -1).map((item, key) => {
+                                return <tr key={key}>
+                                    <td>{item.name.toUpperCase()}</td>
+                                    <td>{item.success}</td>
+                                    <td>{item.damage}</td>
+                                    <td>
+                                        <div className="float-right">
+                                            <button className="btn" onClick={() => handleEdit(item)}><i className="fas fa-edit" /></button>
+                                            <button className="btn" onClick={() => handleDetail(item)}><i className="fas fa-book-skull" /></button>
+                                        </div>
+                                    </td>
                                 </tr>
-                            </thead>
-                            <tbody>
-                                {danger && danger.sort((a, b) => (a.name > b.name) ? 1 : -1).filter(x => x.active === 1).map((item, key) => {
-                                    return <tr key={key}>
-                                        <td>{item.name.toUpperCase()}</td>
-                                        <td>{item.success}</td>
-                                        <td>{item.damage}</td>
-                                        <td>
-                                            <div className="float-right">
-                                                <button className="btn" onClick={() => handleEdit(item)}><i className="fas fa-edit" /></button>
-                                                <button className="btn" onClick={() => handleDetail(item)}><i className="fas fa-book-skull" /></button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                })}
-                            </tbody>
-                        </table>
-                    </div>
-                    <div className="float-right" style={{ marginTop: '10px' }}>
-                        <button type="button" className="btn btn-primary float-right" onClick={handleForm}><i className="fas fa-scroll"> </i> Novo</button>
-                    </div>
-               
+                            })}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className="float-right" style={{ marginTop: '10px' }}>
+                    {renderPage()}
+                </div>
+
             </div>
         </>
     );

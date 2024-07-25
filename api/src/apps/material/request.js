@@ -15,8 +15,6 @@ router.get('/v1/hero/', async function (req, res, next) {
 router.get('/v1/hero_and_monster/', async function (req, res, next) {
     try {
 
-        const { Op } = require('sequelize');
-
         const heros = await req.db.Hero.findAll();
         const monsters = await req.db.Monster.findAll({
             where: {
@@ -25,6 +23,49 @@ router.get('/v1/hero_and_monster/', async function (req, res, next) {
         });
 
         res.status(200).send({ success: true, data: { heros, monsters } });
+    } catch (error) {
+        next(error);
+    }
+});
+
+router.get('/v1/hero/stats', async function (req, res, next) {
+    try {
+
+
+        // const { QueryTypes } = require('sequelize');
+        // const heros = await req.db.sequelize.query('select sum(pvTotal) as totalVida,sum(pmTotal) as totalMana,sum(pmAtual) as atualMana ,sum(pvAtual) as atualVida from `heros`', {
+        //   type: QueryTypes.SELECT,
+        // });
+
+        const totalVida = await req.db.Hero.sum('pvTotal')
+        const totalMana = await req.db.Hero.sum('pmTotal')
+        const atualVida = await req.db.Hero.sum('pvAtual')
+        const atualMana = await req.db.Hero.sum('pmAtual')
+        const totalItens = await req.db.Item.sum('quantity')
+
+        // res.status(200).send({
+        //     success: true, data: {
+        //         totalVida: heros.totalVida,
+        //         totalMana: heros.totalMana,
+        //         atualVida: heros.atualVida,
+        //         atualMana: heros.atualMana,
+        //         percentualMana: Math.floor((heros.atualMana * 100) / heros.totalMana),
+        //         percentualVida: Math.floor((heros.atualVida * 100) / heros.totalVida),
+        //         totalItens
+        //     }
+        // });
+
+        res.status(200).send({
+            success: true, data: {
+                totalVida,
+                totalMana,
+                atualVida,
+                atualMana,
+                percentualMana: Math.floor((atualMana * 100) / totalMana),
+                percentualVida: Math.floor((atualVida * 100) / totalVida),
+                totalItens
+            }
+        });
     } catch (error) {
         next(error);
     }
@@ -61,6 +102,7 @@ router.get('/v1/request/:id', async function (req, res, next) {
 
 router.put('/v1/hero/:id', async function (req, res, next) {
     try {
+        let x = JSON.parse(req.body.data.data);
         const row = await req.db.Hero.findByPk(req.params.id);
         row.props = req.body.data.data;
         row.vantagens = req.body.data.vantagens;
@@ -68,6 +110,10 @@ router.put('/v1/hero/:id', async function (req, res, next) {
         row.pericias = req.body.data.pericias;
         row.armas = req.body.data.armas;
         row.magias = req.body.data.magias;
+        row.pmAtual = x.atualPM;
+        row.pvAtual = x.atualPV;
+        row.pmTotal = x.totalPM;
+        row.pvTotal = x.totalPV;
         row.save();
         res.status(200).send({ success: true });
     } catch (error) {
@@ -81,6 +127,7 @@ router.put('/v1/hero/life/:id', async function (req, res, next) {
         const row = await req.db.Hero.findByPk(req.params.id);
         let x = JSON.parse(row.props);
         x.atualPV = x.atualPV + life;
+        row.pvAtual = row.pvAtual + life
         row.props = JSON.stringify(x);
         row.save();
         res.status(200).send({ success: true });
@@ -95,6 +142,7 @@ router.put('/v1/hero/mana/:id', async function (req, res, next) {
         const row = await req.db.Hero.findByPk(req.params.id);
         let x = JSON.parse(row.props);
         x.atualPM = x.atualPM + mana;
+        row.pmAtual = row.pmAtual + mana
         row.props = JSON.stringify(x);
         row.save();
         res.status(200).send({ success: true });
@@ -102,6 +150,24 @@ router.put('/v1/hero/mana/:id', async function (req, res, next) {
         next(error);
     }
 });
+
+router.put('/v1/hero/xp/:id', async function (req, res, next) {
+    const { xp, opperator } = req.body;
+    try {
+        const row = await req.db.Hero.findByPk(req.params.id);
+
+        if (opperator === 'minus')
+            row.xpGasto = row.xpGasto + parseInt(xp);
+        else if (opperator === 'plus')
+            row.xpTotal = row.xpTotal + parseInt(xp);
+
+        row.save();
+        res.status(200).send({ success: true });
+    } catch (error) {
+        next(error);
+    }
+});
+
 
 router.delete('/v1/item/:id', async function (req, res, next) {
     try {
