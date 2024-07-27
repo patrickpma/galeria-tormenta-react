@@ -23,11 +23,12 @@ function HeroView(props) {
                         <td>
                             <span><b>Atributos</b></span><br></br>
                             <p>{`Força ${data.Forca} , Habilidade ${data.Habilidade}, Resistência ${data.Resistencia}, Armadura ${data.Armadura}, PdF ${data.PdF}`}</p>
+                            <p><b>Pontos de Vida: </b>{data.totalPV} <b>Pontos de Magia: </b>{data.totalPM}</p>
                             <span><b>Vantagens</b></span><br />
                             <p>{vantagens && vantagens.split(',').map((line, key) => {
                                 return <><span key={key}>{line}</span><br /></>
                             })}</p>
-                            <p><b>Pontos de Vida: </b>{data.totalPV} <b>Pontos de Magia: </b>{data.totalPM}</p>
+                          
                             {desvantagens &&
                                 <>
                                     <span><b>Desvantagens</b></span><br />
