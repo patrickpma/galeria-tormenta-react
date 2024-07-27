@@ -14,9 +14,6 @@ function HeroView(props) {
         hero } = props.params;
     const data = JSON.parse(props.params.data);
 
-    debugger;
-
-
     return (
         <>
 
@@ -30,6 +27,7 @@ function HeroView(props) {
                             <p>{vantagens && vantagens.split(',').map((line, key) => {
                                 return <><span key={key}>{line}</span><br /></>
                             })}</p>
+                            <p><b>Pontos de Vida: </b>{data.totalPV} <b>Pontos de Magia: </b>{data.totalPM}</p>
                             {desvantagens &&
                                 <>
                                     <span><b>Desvantagens</b></span><br />

@@ -11,6 +11,8 @@
 # production
 /build
 
+/daemon
+
 # misc
 .DS_Store
 .env.local
@@ -21,3 +23,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+api/tormenta.sqlite-journal
+daemon/tormenta.out.log
+daemon/tormenta.wrapper.log
+daemon/tormenta.out.log
+daemon/tormenta.wrapper.log

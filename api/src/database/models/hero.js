@@ -18,5 +18,10 @@ module.exports = (sequelize, Sequelize) => {
   }
   );
 
+  Hero.associate = models => {
+    Hero.hasMany(models.Pericia, { as: 'pericia', foreignKey: 'heroId' });
+};
+
+
   return Hero;
 };

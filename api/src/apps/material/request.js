@@ -4,7 +4,22 @@ const router = require('express').Router();
 router.get('/v1/hero/', async function (req, res, next) {
     try {
 
-        const rows = await req.db.Hero.findAll();
+        const rows = await req.db.Hero.findAll({
+            include: [{ model: req.db.Pericia, as: 'pericia' }] 
+          });
+
+        res.status(200).send({ success: true, data: rows });
+    } catch (error) {
+        next(error);
+    }
+});
+
+router.get('/v1/hero/:id', async function (req, res, next) {
+    try {
+
+        const rows = await req.db.Hero.findByPk(req.params.id,{
+            include: [{ model: req.db.Pericia, as: 'pericia' }] 
+          });
 
         res.status(200).send({ success: true, data: rows });
     } catch (error) {
@@ -28,32 +43,14 @@ router.get('/v1/hero_and_monster/', async function (req, res, next) {
     }
 });
 
-router.get('/v1/hero/stats', async function (req, res, next) {
+router.get('/v1/hero_stats', async function (req, res, next) {
     try {
-
-
-        // const { QueryTypes } = require('sequelize');
-        // const heros = await req.db.sequelize.query('select sum(pvTotal) as totalVida,sum(pmTotal) as totalMana,sum(pmAtual) as atualMana ,sum(pvAtual) as atualVida from `heros`', {
-        //   type: QueryTypes.SELECT,
-        // });
 
         const totalVida = await req.db.Hero.sum('pvTotal')
         const totalMana = await req.db.Hero.sum('pmTotal')
         const atualVida = await req.db.Hero.sum('pvAtual')
         const atualMana = await req.db.Hero.sum('pmAtual')
         const totalItens = await req.db.Item.sum('quantity')
-
-        // res.status(200).send({
-        //     success: true, data: {
-        //         totalVida: heros.totalVida,
-        //         totalMana: heros.totalMana,
-        //         atualVida: heros.atualVida,
-        //         atualMana: heros.atualMana,
-        //         percentualMana: Math.floor((heros.atualMana * 100) / heros.totalMana),
-        //         percentualVida: Math.floor((heros.atualVida * 100) / heros.totalVida),
-        //         totalItens
-        //     }
-        // });
 
         res.status(200).send({
             success: true, data: {
@@ -120,6 +117,18 @@ router.put('/v1/hero/:id', async function (req, res, next) {
         next(error);
     }
 });
+
+router.put('/v1/pericia/:id', async function (req, res, next) {
+    try {
+        const row = await req.db.Pericia.findByPk(req.body.periciaId);
+        row.treinada = req.body.treinada;
+        row.save();
+        res.status(200).send({ success: true });
+    } catch (error) {
+        next(error);
+    }
+});
+
 
 router.put('/v1/hero/life/:id', async function (req, res, next) {
     const { life } = req.body;
