@@ -52,7 +52,7 @@ function Principia() {
                             <li className="nav-item">
                                 <a className="nav-link " id="custom-tabs-one-enigma-tab" data-toggle="pill" href="#custom-tabs-enigma" role="tab" aria-controls="custom-tabs-enigma" aria-selected="true">Monstros</a>
                             </li>
-                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="http://localhost:8080/tormenta/" onClick={Sair}><i title="Sair" className="fas fa-dungeon"></i></a></li></ul>
+                            <ul className="navbar-nav ml-auto"><li className="nav-item"><a className="nav-link" href="http://10.0.0.159:8080/tormenta" onClick={Sair}><i title="Sair" className="fas fa-dungeon"></i></a></li></ul>
                         </ul>
                     </div>
                     <div className="card-body">

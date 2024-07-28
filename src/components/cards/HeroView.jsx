@@ -5,13 +5,13 @@ import { Utils } from '../Utils';
 function HeroView(props) {
 
     const {
-        id,
         vantagens,
         desvantagens,
         pericias,
         armas,
         magias,
         hero } = props.params;
+    const pericias2 = hero.pericia.filter(p => p.treinada);
     const data = JSON.parse(props.params.data);
 
     return (
@@ -26,14 +26,14 @@ function HeroView(props) {
                             <p><b>Pontos de Vida: </b>{data.totalPV} <b>Pontos de Magia: </b>{data.totalPM}</p>
                             <span><b>Vantagens</b></span><br />
                             <p>{vantagens && vantagens.split(',').map((line, key) => {
-                                return <><span key={key}>{line}</span><br /></>
+                                return <React.Fragment key={key}><span>{line}</span><br /></React.Fragment>
                             })}</p>
-                          
+
                             {desvantagens &&
                                 <>
                                     <span><b>Desvantagens</b></span><br />
                                     <p>{desvantagens && desvantagens.split(',').map((line, key) => {
-                                        return <><span key={key}>{line}</span><br /></>
+                                        return <React.Fragment key={key}><span>{line}</span><br /></React.Fragment>
                                     })}</p>
                                 </>
                             }
@@ -41,7 +41,7 @@ function HeroView(props) {
                                 <>
                                     <span><b>Itens</b></span><br />
                                     <p>{armas && armas.split(',').map((line, key) => {
-                                        return <><span key={key}>{line}</span><br /></>
+                                        return <React.Fragment key={key}><span>{line}</span><br /></React.Fragment>
                                     })}</p>
                                 </>
                             }
@@ -49,7 +49,15 @@ function HeroView(props) {
                                 <>
                                     <span><b>Pericias</b></span><br />
                                     <p>{pericias && pericias.split(',').map((line, key) => {
-                                        return <><span key={key}>{line}</span><br /></>
+                                        return <React.Fragment key={key}><span>{line}</span><br /></React.Fragment>
+                                    })}</p>
+                                </>
+                            }
+                            {pericias2.length &&
+                                <>
+                                    <span><b>Pericias</b></span><br />
+                                    <p>{pericias2 && pericias2.map((item, key) => {
+                                        return <React.Fragment key={key}><span>{item.nome}</span><br /></React.Fragment>
                                     })}</p>
                                 </>
                             }
@@ -57,7 +65,7 @@ function HeroView(props) {
                                 <>
                                     <span><b>Magias</b></span><br />
                                     <p>{magias && magias.split(',').map((line, key) => {
-                                        return <><span key={key}>{line}</span><br /></>
+                                        return <React.Fragment key={key}><span>{line}</span><br /></React.Fragment>
                                     })}</p>
                                 </>
                             }

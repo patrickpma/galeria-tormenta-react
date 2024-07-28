@@ -204,41 +204,41 @@ function MasterCard(props) {
                         <>
                             <div className="row">
                                 <div className="col-md-3 col-sm-2 col-12">
-                                    <div class="info-box mb-3">
-                                        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-heart"></i></span>
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Pontos de Vida</span>
-                                            <span class="info-box-number">{params.hero.data.atualPV}</span>
+                                    <div className="info-box mb-3">
+                                        <span className="info-box-icon bg-success elevation-1"><i className="fas fa-heart"></i></span>
+                                        <div className="info-box-content">
+                                            <span className="info-box-text">Pontos de Vida</span>
+                                            <span className="info-box-number">{params.hero.data.atualPV}</span>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div className="col-md-3 col-sm-2 col-12">
-                                    <div class="info-box mb-3">
-                                        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-flask"></i></span>
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Pontos de Mana</span>
-                                            <span class="info-box-number">{params.hero.data.atualPM}</span>
+                                    <div className="info-box mb-3">
+                                        <span className="info-box-icon bg-info elevation-1"><i className="fas fa-flask"></i></span>
+                                        <div className="info-box-content">
+                                            <span className="info-box-text">Pontos de Mana</span>
+                                            <span className="info-box-number">{params.hero.data.atualPM}</span>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div className="col-md-3 col-sm-2 col-12">
-                                    <div class="info-box mb-3">
-                                        <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-hand-fist"></i></span>
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Força de Ataque</span>
-                                            <span class="info-box-number">{params.hero.data.Habilidade + params.hero.data.AtributoAtaque}{"(" + (params.hero.data.Habilidade + (params.hero.data.AtributoAtaque * 2)) + ")"}</span>
+                                    <div className="info-box mb-3">
+                                        <span className="info-box-icon bg-warning elevation-1"><i className="fas fa-hand-fist"></i></span>
+                                        <div className="info-box-content">
+                                            <span className="info-box-text">Força de Ataque</span>
+                                            <span className="info-box-number">{params.hero.data.Habilidade + params.hero.data.AtributoAtaque}{"(" + (params.hero.data.Habilidade + (params.hero.data.AtributoAtaque * 2)) + ")"}</span>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div className="col-md-3 col-sm-2 col-12">
-                                    <div class="info-box mb-3">
-                                        <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-shield"></i></span>
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Força de Defesa</span>
-                                            <span class="info-box-number">{params.hero.data.Habilidade + params.hero.data.Armadura}{"(" + (params.hero.data.Habilidade + (params.hero.data.Armadura * 2)) + ")"}</span>
+                                    <div className="info-box mb-3">
+                                        <span className="info-box-icon bg-danger elevation-1"><i className="fas fa-shield"></i></span>
+                                        <div className="info-box-content">
+                                            <span className="info-box-text">Força de Defesa</span>
+                                            <span className="info-box-number">{params.hero.data.Habilidade + params.hero.data.Armadura}{"(" + (params.hero.data.Habilidade + (params.hero.data.Armadura * 2)) + ")"}</span>
 
                                         </div>
                                     </div>
@@ -251,17 +251,21 @@ function MasterCard(props) {
                                             <h6>Atributos</h6>
                                             <textarea className="form-control" id="data" onChange={handleChange} rows="5" value={params.data}></textarea>
                                         </div>
-                                        <div className="col-md-12">
+                                        <div className="col-md-6">
                                             <h6>Vantagens</h6>
                                             <textarea className="form-control" id="vantagens" onChange={handleChange} rows="10" value={params.vantagens}></textarea>
                                         </div>
-                                        <div className="col-md-12">
-                                            <h6>Desvantagens</h6>
-                                            <textarea className="form-control" id="desvantagens" onChange={handleChange} rows="4" value={params.desvantagens}></textarea>
+                                        <div className="col-md-6">
+                                            <h6>Magias</h6>
+                                            <textarea className="form-control" id="magias" onChange={handleChange} rows="10" value={params.magias}></textarea>
                                         </div>
-                                        <div className="col-md-12">
+                                        <div className="col-md-6">
+                                            <h6>Desvantagens</h6>
+                                            <textarea className="form-control" id="desvantagens" onChange={handleChange} rows="6" value={params.desvantagens}></textarea>
+                                        </div>
+                                        <div className="col-md-6">
                                             <h6>Armas</h6>
-                                            <textarea className="form-control" id="armas" onChange={handleChange} rows="5" value={params.armas}></textarea>
+                                            <textarea className="form-control" id="armas" onChange={handleChange} rows="6" value={params.armas}></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -276,14 +280,12 @@ function MasterCard(props) {
                                         <div className="col-md-6">
                                             <Pericias hero={params.hero} init={11} end={23} />
                                         </div>
-                                        <div className="col-md-12">
-                                            <h6>Magias</h6>
-                                            <textarea className="form-control" id="magias" onChange={handleChange} rows="5" value={params.magias}></textarea>
-                                        </div>
+
                                         {/* <div className="col-md-12">
                                             <h6>Pericias</h6>
                                             <textarea className="form-control" id="pericias" onChange={handleChange} rows="3" value={params.pericias}></textarea>
                                         </div> */}
+                                        
                                         <div className="col-md-12">
                                             <h6>Experiência <span className="badge badge-success" title='disponível'>{params.hero.xpTotal - params.hero.xpGasto}</span>/
                                                 <span className="badge badge-primary" title='total'>{params.hero.xpTotal}</span></h6>
@@ -293,7 +295,7 @@ function MasterCard(props) {
                                                         <i className="fas fa-solid fa-minus"></i>
                                                     </span>
                                                 </div>
-                                                <input type="number" className="form-control" id="xp" onChange={handleChangeXP} value={xp}></input>
+                                                <input type="number" className="form-control form-control-sm" id="xp" onChange={handleChangeXP} value={xp}></input>
                                                 <div className="input-group-append" onClick={() => handleXP(params.id, 'plus')}>
                                                     <div className="input-group-text"><i className="fas fa-plus"></i></div>
                                                 </div>

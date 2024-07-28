@@ -18,7 +18,7 @@ function Pericias(props) {
                     desvantagens: hero.desvantagens, pericias: hero.pericias, armas: hero.armas, magias: hero.magias, xpTotal: hero.xpTotal, xpGasto: hero.xpGasto, pericia: hero.pericia
                 });
             }).catch((e) => {
-                console.error("Ocorreu um erro ao buscar requisições: ");
+                console.error("Ocorreu um erro ao buscar pericias: ");
             });
     };
 
@@ -31,7 +31,7 @@ function Pericias(props) {
         axios.put(`${Utils.api()}pericia/${id}`, { periciaId: name, treinada: value }).then(res => {
             fechData();
         }).catch(error => {
-            console.error("Ocorreu um erro ao handleSave: " + error.response.data.message);
+            console.error("Ocorreu um erro ao handleChange: " + error.response.data.message);
         });
     }
 
