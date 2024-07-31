@@ -41,7 +41,28 @@ function Rules(props) {
                         </tr>
                         <tr>
                             <td>
-                                <span><b>Testes Com Número Alvo</b></span><br />
+                                <span><b>Testes Atributo Com Número Alvo(CD)</b></span><br />
+                                <p>Em vez dos habituais testes do 3D&T estes são testes em que se rola o dado e soma-se o valor ao atributo testado o jogador é bem sucedido quando atinge o número alvo (CD).<br /><br />
+                                    <ul>
+                                        <li>3 Fácil</li>
+                                        <li>6 Médio</li>
+                                        <li>9 Difícil</li>
+                                        <li>12 Muito Difícil</li>
+                                        <li>15 Heróico</li>
+                                        <li>18 Lendário</li>
+                                    </ul>
+                                    <b>Meta resistida</b>. Quando a meta de um teste
+                                    é o resultado de um teste feito por outro
+                                    personagem. <br />
+                                    <b>Resultado 6</b> é um acerto crítico. O atributo é somado mais uma
+                                    vez para determinar o resultado final. Se rolar mais de um dado,
+                                    cada resultado 6 soma mais um crítico ao total
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span><b>Testes Pericia Com Número Alvo(CD)</b></span><br />
                                 <p>Em vez dos habituais testes do 3D&T estes são testes em que se rola o dado¹ e soma-se o valor ao atributo testado dividido por 2 (arrendonde para baixo) o jogador é bem sucedido quando atinge o número alvo (CD).<br /><br />
                                     <ul>
                                         <li>3 Fácil</li>
@@ -87,7 +108,7 @@ function Rules(props) {
                                 <li> Armeiro: Arqueiro, Atirador, Lanceiro, Besteiro e demais que atacam a distancia bônus em PODER DE FOGO.</li>
                                 <li> Arcano: Magos, Feiticeiros, Bruxos e demais usuários de magia bônus nas rolagem de Magia.</li>
                                 <li> Tanque: Escudeiros e demais personagens focados em defesa bônus em ARMADURA.</li>
-                                </ul>
+                            </ul>
                             <p><b>Nível do NPC</b><br />
                                 <ul>
                                     <li> Iniciante: Bônus de +2</li>

@@ -29,6 +29,7 @@ module.exports = (config, dbSync) => {
     db.Item = require('./models/item')(sequelize, Sequelize);
     db.Initiative = require('./models/initiative')(sequelize, Sequelize);
     db.Monster = require('./models/monster')(sequelize, Sequelize);
+    db.MonsterV2 = require('./models/monsterV2')(sequelize, Sequelize);
     db.Danger = require('./models/danger')(sequelize, Sequelize);
     db.Aventura = require('./models/aventura')(sequelize, Sequelize);
     db.Cena = require('./models/cena')(sequelize, Sequelize);

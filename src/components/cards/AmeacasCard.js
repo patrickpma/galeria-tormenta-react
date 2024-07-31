@@ -1,5 +1,5 @@
 import React from 'react';
-import Monsters from './Monsters';
+import Monsters from '../v2/Monsters';
 import Aventura from '../adventure/Aventura';
 import Danger from './Danger';
 import Rules from './Rules';

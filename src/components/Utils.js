@@ -1,6 +1,7 @@
 export const Utils = {
     auth,
-    api
+    api,
+    v2
 };
 
 function auth(user, pwd) {
@@ -9,4 +10,8 @@ function auth(user, pwd) {
 
 function api() {
     return "http://10.0.0.159:8088/api/v1/";
+}
+
+function v2() {
+    return "http://10.0.0.159:8088/api/v2/";
 }
