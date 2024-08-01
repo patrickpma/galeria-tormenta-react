@@ -42,7 +42,7 @@ function Pericias(props) {
                     <tbody>
                         {hero && hero.pericia && hero.pericia.slice(init,end).map((item, key) => {
                             return <tr key={key}>
-                                <td><input class="form-check-input" type="checkbox" id={item.id} checked={item.treinada} onChange={handleChange} /></td>
+                                <td><input className="form-check-input" type="checkbox" id={item.id} checked={item.treinada} onChange={handleChange} /></td>
                                 <td>{item.nome}</td>
                                 <td>{item.somenteTreinada && <i className="fas fa-graduation-cap" title='somente treinada'/>}</td>
                             </tr>

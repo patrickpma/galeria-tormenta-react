@@ -19,13 +19,14 @@ router.get('/v2/monster/', async function (req, res, next) {
 });
 
 router.post('/v2/monster/', async function (req, res, next) {
-    const { name, ataques, defesas, pericias, resistencias, habilidades_especiais, pv, pm, escala } = req.body.data;
+    const { name, ataques, defesas, pericias, resistencias, iniciativa, habilidades_especiais, pv, pm, escala } = req.body.data;
     try {
         let monster = {
             name: name,
             ataques: ataques,
             defesas: defesas,
             resistencias: resistencias,
+            iniciativa: iniciativa,
             pericias: pericias,
             habilidades_especiais: habilidades_especiais,
             pv: pv,
@@ -85,6 +86,7 @@ router.patch('/v2/monster/clone/:id', async function (req, res, next) {
             ataques: row.ataques,
             defesas: row.defesas,
             resistencias: row.resistencias,
+            iniciativa: row.iniciativa,
             pericias: row.pericias,
             habilidades_especiais: row.habilidades_especiais,
             pv: row.pv,
@@ -101,13 +103,14 @@ router.patch('/v2/monster/clone/:id', async function (req, res, next) {
 });
 
 router.put('/v2/monster/:id', async function (req, res, next) {
-    const { name, ataques, defesas, pericias, resistencias, habilidades_especiais, pv, pm, escala } = req.body.data;
+    const { name, ataques, defesas, pericias, resistencias, iniciativa, habilidades_especiais, pv, pm, escala } = req.body.data;
     try {
         const row = await req.db.MonsterV2.findByPk(req.params.id);
         row.name = name;
         row.ataques = ataques;
         row.defesas = defesas;
         row.resistencias = resistencias;
+        row.iniciativa = iniciativa;
         row.pericias = pericias;
         row.habilidades_especiais = habilidades_especiais;
         row.pv = pv;

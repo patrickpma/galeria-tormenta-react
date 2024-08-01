@@ -1,4 +1,5 @@
 
+const pericias = require("../json/uso-pericias.json");
 const router = require('express').Router();
 
 router.get('/v1/hero/', async function (req, res, next) {
@@ -72,6 +73,14 @@ router.get('/v1/item/', async function (req, res, next) {
     try {
         const rows = await req.db.Item.findAll();
         res.status(200).send({ success: true, data: rows });
+    } catch (error) {
+        next(error);
+    }
+});
+
+router.get('/v1/pericia/', async function (req, res, next) {
+    try {
+        res.status(200).send({ success: true, data: pericias });
     } catch (error) {
         next(error);
     }

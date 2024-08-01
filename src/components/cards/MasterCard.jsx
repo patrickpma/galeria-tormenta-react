@@ -6,6 +6,7 @@ import { Utils } from '../Utils';
 import Initiative from './Initiative';
 import HeroView from './HeroView';
 import Pericias from './Pericias'
+import PericiasUsos from './PericiasUsos';
 
 
 function MasterCard(props) {
@@ -451,6 +452,9 @@ function MasterCard(props) {
                                 <li className="nav-item">
                                     <a className="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false">Iniciativa</a>
                                 </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" id="custom-tabs-4-profile-tab" data-toggle="pill" href="#custom-tabs-4-profile" role="tab" aria-controls="custom-tabs-4-profile" aria-selected="false">Pericias</a>
+                                </li>
                             </ul>
                             <div className="tab-content" id="custom-tabs-three-tabContent">
                                 <div className="tab-pane fade show active" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
@@ -461,6 +465,11 @@ function MasterCard(props) {
                                 <div className="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
                                     <div style={{ marginTop: '20px' }}>
                                         <Initiative></Initiative>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade" id="custom-tabs-4-profile" role="tabpanel" aria-labelledby="custom-tabs-4-profile-tab">
+                                    <div style={{ marginTop: '20px' }}>
+                                      <PericiasUsos></PericiasUsos>
                                     </div>
                                 </div>
                             </div>

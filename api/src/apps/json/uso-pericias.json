@@ -1,0 +1,89 @@
+[
+    {
+        "Nome": "Atletismo",
+        "values": "Corrida (CD varia);Escalar (CD varia);Natação (CD varia);Saltar (CD varia)"
+    },
+    {
+        "Nome": "Acrobacia",
+        "values": "Amortecer queda (CD 9);Equilíbrio (CD varia);Escapar (CD varia);Passar por espaço apertado  (CD 12);Passar por inimigo (CD varia)"
+    },
+    {
+        "Nome": "Cavalgar",
+        "values": "Conduzir (CD varia);Galopar(CD varia);Montar Rapidamente(CD 12)"
+    },
+    {
+        "Nome": "Furtividade",
+        "values": "Esconder-se(CD varia);Seguir(CD varia)"
+    },
+    {
+        "Nome": "Ladinagem",
+        "values": "Abrir Fechadura (CD varia + 2 sem ferramenta);Ocultar Objeto (CD varia);Punga (CD varia - Percepção do alvo);Sabotar (CD varia)"
+    },
+    {
+        "Nome": "Pilotagem",
+        "values": "Conduzir(CD varia)"
+    },
+    {
+        "Nome": "Conhecimento",
+        "values": "Idiomas(CD varia);Informações(CD varia)"
+    },
+    {
+        "Nome": "Guerra",
+        "values": "Analisar Terreno(CD 12);Tática(CD 12)"
+    },
+    {
+        "Nome": "Investigação",
+        "values": "Interrogar(CD varia);Procurar(CD varia)"
+    },
+    {
+        "Nome": "Misticismo",
+        "values": "Detectar Magia(CD 9);Identificar criatura Mágica(CD 9);Identificar Item Mágico(CD 10 Item menor, CD 12 Item medio, 15 Items Superiores (1 Hora));Identificar magia(CD 12);Informações sobre magia(CD varia)"
+    },
+    {
+        "Nome": "Nobreza",
+        "values": "Etiqueta (CD 10);Informação (CD varia)"
+    },
+    {
+        "Nome": "Ofício",
+        "values": "Consertar (CD varia);Fabricar (CD varia);Identificar (CD 12);Sustento  (CD 9); (uma semana)"
+    },
+    {
+        "Nome": "Cura (sem kit CD+3)","values":"Cuidados Prolongados (CD 9 - leva uma hora);Necropsia (CD 12 - 10 minutos);Primeiros Socorros (CD 9);Tratamento (CD varia)"
+    },
+    {
+        "Nome": "Intuição",
+        "values": "Perceber mentira (ver CD enganação);Pressentimento (CD 12)"
+    },
+    {
+        "Nome": "Percepção",
+        "values": "Observar (CD varia);Ouvir (CD varia)"
+    },
+    {
+        "Nome": "Religião",
+        "values": "Identificar Criatura Divina (CD 12);Identificar Item Mágico(CD 10 Item menor, CD 12 Item medio, 15 Items Superiores (1 Hora));Informação (CD varia);Rito (CD 12)"
+    },
+    {
+        "Nome": "Sobrevivência",
+        "values": "Acampamento (CD varia; áreas específicas +2/4, equipamento -1);Identificar Criatura Animal (CD 12);Orientar-se (para não se perder, CD varia como acampamento);Rastrear (CD Varia)"
+    },
+    {
+        "Nome": "Adestramento",
+        "values": "Acalmar Animal  (CD 9; +2 se ferido; +3 se carnívoro faminto);Manejar Animal (CD 9; permite substituir pilotagem em veículos de tração animal);”,“Atuação;Apresentação (CD 12);Impressionar Plateia (CD varia)"
+    },
+    {
+        "Nome": "Diplomacia",
+        "values": "Barganha (CD varia);Mudar atitude (CD varia);Persuasão  (CD 12)"
+    },
+    {
+        "Nome": "Enganação",
+        "values": "Disfarce  (CD varia; 10 minutos);Falsificação (CD varia);Insinuar (CD varia);Intriga (CD varia);Mentir  (CD varia)"
+    },
+    {
+        "Nome": "Intimidação",
+        "values": "Assustar (CD varia);Coagir  (CD varia)"
+    },
+    {
+        "Nome": "Jogatina",
+        "values": "Apostar (CD varia);Jogar (CD varia, de acordo com regras do jogo);"
+    }
+]

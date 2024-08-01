@@ -10,11 +10,11 @@ function Monsters(props) {
     const [data, setData] = useState({});
     const [hideDiscarted, setHideDiscarted] = useState(true);
     const [params, setParam] = useState({
-        pageSize: 10,
+        pageSize: 5,
         totalPages: 0,
         selectedPage: 0,
         initRow: 0,
-        endRow: 10,
+        endRow: 5,
         showModal: false,
         monster: {}
     });
@@ -256,8 +256,8 @@ function Monsters(props) {
                     <div className="info-box">
                         <span className="info-box-icon bg-warning"><i className="fas fa-book-skull"></i></span>
                         <div className="info-box-content">
-                            <span className="info-box-text">Escala</span>
-                            <span className="info-box-number">{params.monster.escala}</span>
+                            <span className="info-box-text">Resistência</span>
+                            <span className="info-box-number">{params.monster.resistencias}</span>
                         </div>
                     </div>
                 </div>
@@ -265,8 +265,8 @@ function Monsters(props) {
                     <div className="info-box">
                         <span className="info-box-icon bg-primary"><i className="fas fa-solid fa-shield-halved"></i></span>
                         <div className="info-box-content">
-                            <span className="info-box-text">Resistência</span>
-                            <span className="info-box-number">{params.monster.resistencias}</span>
+                            <span className="info-box-text">Iniciativa</span>
+                            <span className="info-box-number">{params.monster.iniciativa}</span>
                         </div>
                     </div>
                 </div>
@@ -288,9 +288,6 @@ function Monsters(props) {
                         </div>
                     </div>
                 </div>
-
-                <div className="col-md-3 col-sm-6 col-6">
-                </div>
             </div>
             <div className="card-body table-responsive p-0" style={{ minHeight: '270px' }}>
 
@@ -304,28 +301,24 @@ function Monsters(props) {
                                     <button className="btn btn-sm" onClick={() => handleDamage(params.monster.id)}><i className="fas fa-solid fa-skull-crossbones" /></button>
                                     <button className="btn btn-sm" onClick={() => handleSpendMana(params.monster.id)}><i className="fas fa-solid fa-flask" /></button>
                                 </div>
-                                <br /><br />
                                 <span><b>Pericias</b></span>
                                 {
                                     params.monster.pericias && params.monster.pericias.split(';').map((line, key) => {
                                         return <p key={key}>{line}</p>
                                     })
                                 }
-                                <br /><br />
                                 <span><b>Ataques</b></span>
                                 {
                                     params.monster.ataques && params.monster.ataques.split(';').map((line, key) => {
                                         return <p key={key}>{line}</p>
                                     })
                                 }
-                                <br /><br />
                                 <span><b>Defesas</b></span>
                                 {
                                     params.monster.defesas && params.monster.defesas.split(';').map((line, key) => {
                                         return <p key={key}>{line}</p>
                                     })
                                 }
-                                <br /><br />
                                 <span><b>Habilidades Especiais</b></span>
                                 {
                                     params.monster.habilidades_especiais && params.monster.habilidades_especiais.split(';').map((line, key) => {
@@ -357,7 +350,7 @@ function Monsters(props) {
         <>
             <Modal show={params.showModal} onHide={handleClose} backdrop="static" keyboard={false} size='xl'>
                 <Modal.Header>
-                    <Modal.Title>{params.monster.name}</Modal.Title>
+                    <Modal.Title>{params.monster.name} - {params.monster.escala}</Modal.Title>
                     <div className="card-tools">
                         <button type="button" className="btn btn-tool" data-card-widget="collapse"><i className="fas fa-times" onClick={handleClose} /></button>
                     </div>
@@ -378,6 +371,7 @@ function Monsters(props) {
                                         <input type="text" className='form-control form-control-sm' id="name" placeholder='Nome' value={data.name || ''} onChange={handleChange} required />
                                     </div>
                                 </div>
+                                
                                 <div className="col-md-2">
                                     <div className="form-group">
                                         <input type="number" id="pv" className="form-control form-control-sm" placeholder='Pontos de Vida' value={data.pv || ''} onChange={handleChange} required />
@@ -395,6 +389,11 @@ function Monsters(props) {
                                 </div>
                                 <div className="col-md-2">
                                     <div className="form-group">
+                                        <input type="number" id="iniciativa" className="form-control form-control-sm" placeholder='Iniciativa' value={data.iniciativa || ''} onChange={handleChange} required />
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="form-group">
                                         <select className="form-control form-control-sm" id="escala" onChange={handleChange} value={data.escala || ''} required >
                                             <option value=''>Escala</option>
                                             <option value='Ningen'>Ningen</option>
@@ -404,9 +403,14 @@ function Monsters(props) {
                                         </select>
                                     </div>
                                 </div>
+                                <div className="col-md-8">
+                                    <div className="form-group">
+                                        <input id="pericias" className="form-control form-control-sm" placeholder='Pericias' value={data.pericias || ''} onChange={handleChange} required />
+                                    </div>
+                                </div>
                                 <div className="col-md-6">
                                     <div className="form-group">
-                                        <textarea id="pericias" className="form-control form-control-sm" placeholder='Pericias' rows="3" value={data.pericias || ''} onChange={handleChange} required />
+                                        <textarea id="ataques" className="form-control form-control-sm" placeholder='Ataques' rows="3" value={data.ataques || ''} onChange={handleChange} required />
                                     </div>
                                 </div>
                                 <div className="col-md-6">
@@ -416,13 +420,7 @@ function Monsters(props) {
                                 </div>
                                 <div className="col-md-12">
                                     <div className="form-group">
-                                        <textarea id="ataques" className="form-control form-control-sm" placeholder='Ataques' rows="3" value={data.ataques || ''} onChange={handleChange} required />
-                                    </div>
-                                </div>
-
-                                <div className="col-md-12">
-                                    <div className="form-group">
-                                        <textarea id="habilidades_especiais" className="form-control form-control-sm" placeholder='Habilidades' rows="3" value={data.habilidades_especiais || ''} onChange={handleChange} required />
+                                        <textarea id="habilidades_especiais" className="form-control form-control-sm" placeholder='Habilidades' rows="5" value={data.habilidades_especiais || ''} onChange={handleChange} required />
                                     </div>
                                 </div>
                                 <div className="col-md-12">
