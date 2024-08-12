@@ -32,7 +32,7 @@ router.get('/v1/hero_and_monster/', async function (req, res, next) {
     try {
 
         const heros = await req.db.Hero.findAll();
-        const monsters = await req.db.Monster.findAll({
+        const monsters = await req.db.MonsterV2.findAll({
             where: {
                 discarted: 0, available_initiative: 1
             }

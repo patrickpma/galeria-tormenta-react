@@ -9,6 +9,7 @@ import RPGDashboard from './RPGDashboard';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Monsters from './components/cards/Monsters';
+import MonsterView from './components/v2/MonsterView';
 
 
 function Principia() {
@@ -122,7 +123,7 @@ function Principia() {
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="custom-tabs-enigma" role="tabpanel" aria-labelledby="custom-tabs-enigma-tab">
-                                <Monsters />
+                                <MonsterView />
                             </div>
                         </div>
                     </div>

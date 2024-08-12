@@ -18,13 +18,41 @@ router.get('/v2/monster/', async function (req, res, next) {
     }
 });
 
+router.get('/v2/monster/combat', async function (req, res, next) {
+    try {
+        let foo = [];
+        const monsters = await req.db.MonsterV2.findAll({
+            where: {
+                discarted: 0, available_initiative: 1
+            }
+            , order: [
+                // Will escape title and validate DESC against a list of valid direction parameters
+                ['available_initiative', 'desc'], ['name', 'ASC']
+            ]
+        });
+
+        const init = await req.db.Initiative.findAll();
+
+        for (let index = 0; index < monsters.length; index++) {
+            const monster = monsters[index];
+            if (init.some(p => p.name === monster.name))
+                foo.push(monster);
+        }
+
+        res.status(200).send({ success: true, data: foo });
+    } catch (error) {
+        next(error);
+    }
+});
+
 router.post('/v2/monster/', async function (req, res, next) {
-    const { name, ataques, defesas, pericias, resistencias, iniciativa, habilidades_especiais, pv, pm, escala } = req.body.data;
+    const { name, ataques, defesas, descricao, pericias, resistencias, iniciativa, habilidades_especiais, pv, pm, escala } = req.body.data;
     try {
         let monster = {
             name: name,
             ataques: ataques,
             defesas: defesas,
+            descricao: descricao,
             resistencias: resistencias,
             iniciativa: iniciativa,
             pericias: pericias,
@@ -84,6 +112,7 @@ router.patch('/v2/monster/clone/:id', async function (req, res, next) {
         let monster = {
             name: row.name,
             ataques: row.ataques,
+            descricao: row.descricao,
             defesas: row.defesas,
             resistencias: row.resistencias,
             iniciativa: row.iniciativa,
@@ -103,12 +132,13 @@ router.patch('/v2/monster/clone/:id', async function (req, res, next) {
 });
 
 router.put('/v2/monster/:id', async function (req, res, next) {
-    const { name, ataques, defesas, pericias, resistencias, iniciativa, habilidades_especiais, pv, pm, escala } = req.body.data;
+    const { name, ataques, defesas, descricao, pericias, resistencias, iniciativa, habilidades_especiais, pv, pm, escala } = req.body.data;
     try {
         const row = await req.db.MonsterV2.findByPk(req.params.id);
         row.name = name;
         row.ataques = ataques;
         row.defesas = defesas;
+        row.descricao = descricao;
         row.resistencias = resistencias;
         row.iniciativa = iniciativa;
         row.pericias = pericias;

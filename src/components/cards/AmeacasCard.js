@@ -1,8 +1,8 @@
 import React from 'react';
 import Monsters from '../v2/Monsters';
-import Aventura from '../adventure/Aventura';
 import Danger from './Danger';
 import Rules from './Rules';
+import MonsterView from '../v2/MonsterView';
 
 function AmeacasCard(props) {
 
@@ -17,11 +17,11 @@ return (    <div className="card">
     </div>
     <div className="card-body">
         <ul className="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
-        {/* <li className="nav-item">
-                <a className="nav-link active" id="custom-tabs-three-adv-tab" data-toggle="pill" href="#custom-tabs-three-adv" role="tab" aria-controls="custom-tabs-three-adv" aria-selected="true">Aventuras</a>
-            </li> */}
+        <li className="nav-item">
+                <a className="nav-link active" id="custom-tabs-three-adv-tab" data-toggle="pill" href="#custom-tabs-three-adv" role="tab" aria-controls="custom-tabs-three-adv" aria-selected="true">Combates</a>
+            </li>
             <li className="nav-item">
-                <a className="nav-link active" id="custom-tabs-three-monster-tab" data-toggle="pill" href="#custom-tabs-three-monster" role="tab" aria-controls="custom-tabs-three-monster" aria-selected="false">Monstros</a>
+                <a className="nav-link" id="custom-tabs-three-monster-tab" data-toggle="pill" href="#custom-tabs-three-monster" role="tab" aria-controls="custom-tabs-three-monster" aria-selected="false">Monstros</a>
             </li>
             <li className="nav-item">
                 <a className="nav-link" id="custom-tabs-three-danger-tab" data-toggle="pill" href="#custom-tabs-three-danger" role="tab" aria-controls="custom-tabs-three-danger" aria-selected="false">Perigos Complexos</a>
@@ -31,12 +31,12 @@ return (    <div className="card">
             </li>
         </ul>
         <div className="tab-content" id="custom-tabs-three-tabContent">
-        {/* <div className="tab-pane fade show active" id="custom-tabs-three-adv" role="tabpanel" aria-labelledby="custom-tabs-three-adv-tab">
+        <div className="tab-pane fade show active" id="custom-tabs-three-adv" role="tabpanel" aria-labelledby="custom-tabs-three-adv-tab">
                 <div style={{ marginTop: '20px' }}>
-                    <Aventura></Aventura>
+                    <MonsterView></MonsterView>
                 </div>
-            </div> */}
-            <div className="tab-pane fade show active" id="custom-tabs-three-monster" role="tabpanel" aria-labelledby="custom-tabs-three-monster-tab">
+            </div>
+            <div className="tab-pane fade" id="custom-tabs-three-monster" role="tabpanel" aria-labelledby="custom-tabs-three-monster-tab">
                 <div style={{ marginTop: '20px' }}>
                     <Monsters></Monsters>
                 </div>

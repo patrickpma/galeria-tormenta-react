@@ -48,7 +48,8 @@
         "values": "Consertar (CD varia);Fabricar (CD varia);Identificar (CD 12);Sustento  (CD 9); (uma semana)"
     },
     {
-        "Nome": "Cura (sem kit CD+3)","values":"Cuidados Prolongados (CD 9 - leva uma hora);Necropsia (CD 12 - 10 minutos);Primeiros Socorros (CD 9);Tratamento (CD varia)"
+        "Nome": "Cura (sem kit CD+3)",
+        "values": "Cuidados Prolongados (CD 9 - leva uma hora);Necropsia (CD 12 - 10 minutos);Primeiros Socorros (CD 9);Tratamento (CD varia)"
     },
     {
         "Nome": "Intuição",
@@ -81,6 +82,10 @@
     {
         "Nome": "Intimidação",
         "values": "Assustar (CD varia);Coagir  (CD varia)"
+    },
+    {
+        "Nome": "Atuação",
+        "values": "Apresentação (CD 12);Impressionar Plateia (CD varia);"
     },
     {
         "Nome": "Jogatina",
